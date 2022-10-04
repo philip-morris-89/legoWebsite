@@ -492,18 +492,18 @@ body {
 }
 .buttonPrimary[data-template=button3] {
   border-radius: 100px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4] {
   border-radius: 100px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4][data-theme=dark] {
   background-color: transparent;
   color: black;
-  border: 1px solid black;
+  border: 2px solid black;
 }
 .buttonPrimary[data-template=button4][data-theme=dark]:hover {
   text-decoration: underline;
@@ -511,7 +511,7 @@ body {
 .buttonPrimary[data-template=button4][data-theme=light] {
   background-color: transparent;
   color: white;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 .buttonPrimary[data-template=button4][data-theme=light]:hover {
   text-decoration: underline;

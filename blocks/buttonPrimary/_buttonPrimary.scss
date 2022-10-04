@@ -80,18 +80,18 @@
 
   &[data-template=button3] {
     border-radius: 100px;
-    padding-left: $size-24;
-    padding-right: $size-24;
+    padding-left: $size-16;
+    padding-right: $size-16;
   }
 
   &[data-template=button4] {
     border-radius: 100px;
-    padding-left: $size-24;
-    padding-right: $size-24;
+    padding-left: $size-16;
+    padding-right: $size-16;
     &[data-theme=dark] {
       background-color: transparent;
       color: black;
-      border: 1px solid black;
+      border: 2px solid black;
       &:hover {
         text-decoration: underline;
       }
@@ -99,7 +99,7 @@
     &[data-theme=light] {
       background-color: transparent;
       color: white;
-      border: 1px solid white;
+      border: 2px solid white;
       &:hover {
         text-decoration: underline;
       }

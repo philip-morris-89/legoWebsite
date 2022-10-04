@@ -1,0 +1,55 @@
+@import '../../main.scss';
+@import '../../blocks/buttonPrimary/buttonPrimary.scss';
+@import '../../blocks/starRatings/starRatings.scss';
+@import '../../blocks/buttonATC/buttonATC.scss';
+@import '../../blocks/addToWishlist/addToWishlist.scss';
+@import '../../blocks/pageHeader/pageHeader.scss';
+@import '../../templates/navBar/navBar.scss';
+@import '../../templates/banners/banners.scss';
+// @import '../../templates/bannerBig/bigBanner.scss';
+// @import '../../templates/bannerSmall/smallBanner.scss';
+@import '../../templates/quickLinks/quickLinks.scss';
+@import '../../templates/slider/slider.scss';
+@import '../../templates/productCard/productCard.scss';
+@import '../../templates/articleCard/articleCard.scss';
+@import '../../templates/footer/footer.scss';
+
+.promoBanner-100 {
+  margin-bottom: $size-64;
+}
+
+.promoBanner-200 {
+  margin-top: $size-96;
+}
+
+.consigliatiPerTe {
+  .pageHeader {
+    padding-top: $size-48;
+  }
+}
+
+.nataleLego .pageHeader {
+  padding-top: $size-48;
+}
+
+.festeDivertenti .pageHeader {
+  padding: $size-32 0;
+  background-image: url('https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=1');
+  background-position: center;
+  background-size: cover;
+}
+
+.festeDivertenti ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 $size-8;
+  margin-top: $size-16;
+
+  li {
+    margin: 0 $size-8;
+  }
+  @media only screen and (min-width: $mobile-large) {
+    margin-top: 0;
+  }
+}
