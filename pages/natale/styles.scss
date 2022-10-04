@@ -15,7 +15,7 @@
 @import '../../templates/footer/footer.scss';
 
 .promoBanner-100 {
-  margin-bottom: $size-64;
+  margin-bottom: 0;
 }
 
 .promoBanner-200 {
@@ -61,5 +61,8 @@
       background-color: transparent;
     }
   } 
+}
+.quickLinks-container{
+  background-color: #33a19d;
 }
 
