@@ -1,0 +1,27 @@
+.AreaGiochi {
+  height: 25px;
+  width: auto;
+  display: inline-flex;
+  align-items: center;
+  background: rgb(171, 217, 255);
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.75rem;
+  line-height: 1.5625rem;
+  border: none;
+  border-radius: 3px;
+  box-shadow: rgba(48, 85, 181, 0.44) 0px 1px 4px 0px;
+  padding: 0px 0.625rem;
+}
+.AreaGiochi:hover {
+  background: white;
+}
+.AreaGiochi .AreaGiochi-Svg {
+  margin-right: 0.625rem;
+  transform: rotate(180deg);
+  height: 16px;
+  width: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

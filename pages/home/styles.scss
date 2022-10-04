@@ -1,0 +1,29 @@
+@import '../../main.scss';
+@import '../../blocks/buttonPrimary/buttonPrimary.scss';
+@import '../../blocks/starRatings/starRatings.scss';
+@import '../../blocks/buttonATC/buttonATC.scss';
+@import '../../blocks/addToWishlist/addToWishlist.scss';
+@import '../../blocks/pageHeader/pageHeader.scss';
+@import '../../templates/navBar/navBar.scss';
+@import '../../templates/banners/banners.scss';
+// @import '../../templates/bannerBig/bigBanner.scss';
+// @import '../../templates/bannerSmall/smallBanner.scss';
+@import '../../templates/quickLinks/quickLinks.scss';
+@import '../../templates/slider/slider.scss';
+@import '../../templates/productCard/productCard.scss';
+@import '../../templates/articleCard/articleCard.scss';
+@import '../../templates/footer/footer.scss';
+
+.promoBanner-100 {
+  margin-bottom: $size-64;
+}
+
+.promoBanner-200 {
+  margin-top: $size-96;
+}
+
+.consigliatiPerTe {
+  .pageHeader {
+    padding-top: $size-48;
+  }
+}

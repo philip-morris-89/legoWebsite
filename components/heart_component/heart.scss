@@ -1,0 +1,27 @@
+body {
+  font-size: var(headline-100, 150px);
+}
+.hearts {
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  max-width: 90%;
+}
+.heart_main {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  font-size: 0.75rem;
+  font-weight: 500;
+  flex-direction: row;
+}
+.heart {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 0;
+  margin: 5px;
+}

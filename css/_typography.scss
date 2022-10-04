@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "ceraPro-Light";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Light.woff2);
+}
+
+@font-face {
+  font-family: "ceraPro-Regular";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Regular.woff2);
+}
+
+@font-face {
+  font-family: "ceraPro-Medium";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Medium.woff2);
+}
+
+@font-face {
+  font-family: "ceraPro-Bold";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Bold.woff2);
+}
+
+@font-face {
+  font-family: "ceraPro-Black";
+  src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Black.woff2);
+}
+
+body {
+  font-family: "ceraPro-Regular", sans-serif;
+}
+
+@mixin headline-100($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-96;
+  line-height: 1;
+
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin headline-200($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-64;
+  line-height: 1;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin headline-300($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-56;
+  line-height: 1;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin headline-400($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-48;
+  line-height: 1;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin headline-500($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-32;
+  line-height: 1;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin headline-600($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-24;
+  line-height: 1;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin subtitle-100($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-20;
+  line-height: 1.2;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin body-100($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-16;
+  line-height: 1.4;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin body-200($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-14;
+  line-height: 1.4;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin caption-100($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-14;
+  line-height: 1;
+  text-transform: uppercase;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}
+
+@mixin overline-200($weight: "ceraPro-Regular") {
+  font-family: $weight;
+  font-size: $size-12;
+  line-height: 1;
+  text-transform: uppercase;
+  @if $weight == light {
+    font-family: "ceraPro-Light";
+  } @else if $weight == regular {
+    font-family: "ceraPro-Regular";
+  } @else if $weight == medium {
+    font-family: "ceraPro-Medium";
+  } @else if $weight == bold {
+    font-family: "ceraPro-Bold";
+  } @else if $weight == bolder {
+    font-family: "ceraPro-Black";
+  }
+}

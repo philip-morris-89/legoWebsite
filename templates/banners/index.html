@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Banner</title>
+  <link rel="stylesheet" href="../styles.css" link="text/css">
+</head>
+<body>
+  <!--
+  Template options:
+  1. data-skeleton-"true" = Visualizza lo scheletro del template mostrando i bordi al suo interno;
+  2. data-theme="dark, light, blue, purple" = Cambia colore del <div banner Content> quando viene mostarto su telefono.
+  3. data-postiion="left, right, center" = Change position of text and buttons inside the banner on large screens.
+  -->
+
+  <!-- ************************************************************************** Banner -->
+  <div class="banner" data-size="small" data-theme="dark" data-position="left" data-skeleton="false">
+    <section class="bannerMedia">
+      <picture class="bannerPicture">
+        <source class="bannerPicture-source" type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltd44334316ded064e/75331-Exclusive-202210-VIP-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=2">
+        <img class="bannerPicture-img" src="https://www.lego.com/cdn/cs/set/assets/blt8a95702fdb4260d8/75331-Exclusive-202210-VIP-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2">
+      </picture>
+      <img class="bannerMedia-mark" src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Brand image">
+    </section>
+    <div data-container="large">
+      <section class="bannerContent">
+        <img src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Logo image">
+        <h3>Banner title Lorem ipsum dolor amet.</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
+        <ul class="banner-btnGroup">
+          <li class="banner-btnContainer">
+            <!-- Component Button Primary -->
+            <a href="" class="buttonPrimary" data-size="large" data-theme="light" data-template="button1">
+              <span>Compra ora</span>
+              <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="banner-btnContainer">
+            <!-- Component Button Primary -->
+            <a href="" class="buttonPrimary" data-size="large" data-theme="light" data-template="button1">
+              <span>Compra ora</span>
+              <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div><!-- Banner -->
+</body>

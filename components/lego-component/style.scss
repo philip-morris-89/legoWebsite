@@ -1,0 +1,15 @@
+.display-images{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   #novità{
+       padding-top: 7px;
+       text-decoration: none;
+       
+      
+       &:hover{
+           text-decoration: underline;
+       }
+   }
+}

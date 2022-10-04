@@ -1,0 +1,272 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--lego-indigo);
+  color: white;
+  padding: $size-16 0;
+  margin-top: $size-96;
+}
+
+.footer h6 {
+  @include body-100(bold);
+  padding: $size-16 0;
+  text-transform: uppercase;
+}
+
+.footer-link {
+  @include body-100(regular);
+  color: white;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer-aside-siteMap {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-aside {
+  display: flex;
+  flex-direction: column;
+  padding: $size-16;
+}
+
+.footer-aside-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: $size-16 0;
+}
+
+.footer-aside-header-item img {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: $size-80;
+  height: auto;
+}
+
+.footer-aside-link {
+  padding: $size-16 0;
+}
+
+.footer-siteMap-ul {
+  display: flex;
+  flex-direction: column;
+  padding: $size-32 0;
+}
+
+.footer-siteMap-li {
+  display: flex;
+  flex-direction: column;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.25);
+  padding: 0 $size-16;
+  &:last-child {
+    border-bottom-width: 1px;
+  }
+}
+
+.footer-siteMap-li details {
+  summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+
+    h6 {
+      flex-grow: 1;
+    }
+
+    svg {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: $size-10;
+      height: auto;
+      transform: rotate(90deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &[open] {
+    summary svg {
+      transform: rotate(270deg);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $size-12 0;
+  }
+}
+
+.footer-social-marketing .footer-marketing {
+  display: none;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-social-links {
+  display: flex;
+  flex-direction: row;
+   li {
+    display: flex;
+    flex-direction: column;
+    padding: 0 $size-8;
+  }
+  li:first-child {
+    padding-left: 0;
+  }
+  li:last-child {
+    padding-right: 0;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.footer-social-marketing {
+  display: flex;
+  flex-direction: column;
+  padding: 0 $size-16;
+}
+
+.footer-privacy-copyright {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-privacy {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: $size-32 0;
+  a {
+    @include body-200(regular);
+    color: white;
+    text-decoration: none;
+    margin: $size-16;
+    &:hover {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  padding: $size-16;
+  p {
+    @include body-200(regular);
+  }
+}
+
+@media only screen and (min-width: $mobile-large) {
+  .footer [data-container=large] {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .footer {
+    padding: $size-32 0;
+  }
+  .footer-aside-siteMap {
+    flex-direction: row;
+  }
+  .footer-aside {
+    flex-basis: 20%;
+    flex-shrink: 0;
+    padding: $size-16 $size-32;
+  }
+
+  .footer-aside-header{
+    flex-direction: column;
+    padding: 0;
+  }
+  .footer-aside-header-item {
+    padding: $size-16 0;
+  }
+  .footer-aside-header-item img {
+    width: $size-96;
+  }
+  .footer-aside .footer-marketing {
+    display: none;
+  }
+  .footer-siteMap-ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    flex-grow: 1;
+  }
+  .footer-siteMap-li {
+    flex-basis: 50%;
+    padding: $size-16 $size-32;
+    border: none;
+  }
+  .footer-siteMap-li details summary {
+    pointer-events: none;
+    svg {
+      display: none;
+    }
+  }
+  .footer-social-marketing {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $size-48 $size-32;
+  }
+  .footer-social-marketing .footer-marketing {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-privacy {
+    padding-left: $size-16;
+    padding-right: $size-16;
+  }
+  .footer-copyright {
+    padding-left: $size-32;
+    padding-right: $size-32;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .footer-siteMap-li {
+    flex-basis: 25%;
+  }
+}
+
+.footer-siteMap-li details > summary {
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

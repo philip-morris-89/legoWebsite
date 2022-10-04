@@ -1,0 +1,28 @@
+.button-ag {
+  display: block;
+  width: auto;
+  padding: 0.9375rem;
+  border-style: solid;
+  border-radius: 4px;
+  border-collapse: collapse;
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.1875rem;
+  background-color: rgb(253, 128, 36);
+  border-color: rgb(253, 128, 36);
+  color: rgb(0, 0, 0);
+  position: relative;
+  border-width: 2px;
+  cursor: pointer;
+  text-rendering: auto;
+
+  &:hover {
+    background-color: white;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .button-ag {
+    text-rendering: auto;
+  }
+}

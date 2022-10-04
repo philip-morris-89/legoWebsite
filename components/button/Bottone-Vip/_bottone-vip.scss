@@ -1,0 +1,32 @@
+.Button-Vip{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: black;
+    font-size: 0.75rem;
+    line-height: 1.1875rem;
+    font-weight: 500;
+    text-decoration: none;
+    
+    .Button-Vip-Corona{
+        width: 1.25rem;
+        height: 1.25rem;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 0.625rem;
+    }
+
+    @media only screen and (max-width:1024px) {
+        & > span {
+            border: 0px;
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0px;
+            position: absolute;
+            white-space: nowrap;
+            width: 1px;
+        }
+            
+    }
+}    

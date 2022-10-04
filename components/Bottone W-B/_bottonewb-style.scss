@@ -1,0 +1,35 @@
+.Components-Buttons-BW{
+    display: flex;
+    height:25px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 4px;
+    border-collapse: collapse;
+    color: black;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px 15px;
+    margin: 20px 10px 0 10px;
+    font-size: 16px;
+    //HOVER
+    &:hover{
+        background-color: black;
+        color: white;
+    }
+    //SVG ARROW
+    .Components-Buttons-BW-arrow{
+        height: 16px;
+        width: 16px;
+        margin-left: 12px;
+    }
+    //MEDIA
+    @media (max-width:768px){
+        height: 19px;
+    }
+}
+
+
+
+

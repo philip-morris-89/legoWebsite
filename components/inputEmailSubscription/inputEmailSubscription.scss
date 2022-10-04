@@ -1,0 +1,97 @@
+@import '../../main.scss';
+
+html[data-display="mobile"] body {
+  background-color: var(--lego-indigo);
+}
+
+form.inputEmailSubscription {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  input {
+    position: relative;
+    z-index: 2;
+    flex-grow: 1;
+    height: 100%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 $size-16;
+    padding-top: $size-8;
+    @include body-100(medium);
+    color: black;
+  }
+
+  h6 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    @include body-200;
+    line-height: 1;
+    padding: 0 $size-16;
+    pointer-events: none;
+    color: var(--blue-grey-500);
+    z-index: 2;
+    transition: all 0.3s ease-out;
+  }
+
+  button {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: $size-56;
+    height: $size-56;
+    flex-grow: 0;
+    cursor: pointer;
+    background-color: var(--lego-orange);
+    font-weight: bold;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+
+    svg {
+      width: 10px;
+      height: auto;
+    }
+
+    &:active {
+      filter: brightness(75%);
+    }
+  }
+
+  .inputEmailSubscription--focus {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: 0 0 0 var(--lego-blue);
+    transition: all 0.3s ease-out;
+  }
+
+  input:focus {
+    border: 0;
+    outline: 0;
+  }
+
+  // input:focus ~ h6,
+  // input:not([value=""]) ~ h6 {
+  //   top: 27%;
+  //   font-size: 12px;
+  // }
+
+  input:focus ~ h6,
+  input:not(:placeholder-shown) ~ h6 {
+    top: 27%;
+    font-size: 12px;
+  }
+
+  input:focus ~ .inputEmailSubscription--focus {
+    box-shadow: 0 0 32px var(--lego-blue);
+  }
+}

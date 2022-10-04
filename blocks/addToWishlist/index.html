@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css" type="text/css">
+  <title>Add To Wishlist</title>
+</head>
+<body>
+  <!-- Add To Wishlist Component  -->
+  <details class="addToWishlist">
+    <summary>
+      <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="" >
+        <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
+        <path class="path1" d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126" fill="#006DB7"></path>
+        <path class="path2" d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126" fill="#006DB7"></path>
+      </svg>
+      <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
+      <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+      </svg>
+      <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true">
+        <path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path>
+      </svg>
+    </summary>
+    <form>
+      <ul>
+        <li>
+          <input type="checkbox" checked id="generale" name="generale" value="generale">
+          <a href="">Generale (1)</a>
+        </li>
+        <li>
+          <input type="checkbox" id="generale" name="generale" value="generale">
+          <a href="">Regali natale</a>
+        </li>
+      </ul>
+    </form>
+    <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
+  </details>
+  <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
+
+</body>
+</html>

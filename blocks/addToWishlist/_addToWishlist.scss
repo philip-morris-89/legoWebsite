@@ -1,0 +1,236 @@
+@keyframes heartPop {
+  0%    { transform: scale(0); }
+  25%   { transform: scale(1.3); }
+  50%   { transform: scale(0.7); }
+  75%   { transform: scale(1.1); }
+  100%  { transform: scale(1); }
+}
+
+details.addToWishlist {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  top: $size-8;
+  left: $size-8;
+  background-color: transparent;
+  padding: $size-8;
+}
+
+details.addToWishlist * {
+  user-select: none;
+}
+
+details.addToWishlist summary {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  align-items: center;
+}
+
+details.addToWishlist svg.heart {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: $size-32;
+  height: auto;
+  .path1 {
+    fill: transparent;
+  }
+  .path2 {
+    fill: var(--lego-blue);
+  }
+  rect {
+    fill: var(--grey-100);
+  }
+}
+
+details.addToWishlist summary p {
+  display: none;
+  flex-direction: column;
+  padding: 0 $size-8;
+  @include body-200(medium);
+  line-height: 1;
+  margin: 0;
+  flex-grow: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+details.addToWishlist summary svg.arrow {
+  display: none;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: $size-8;
+  height: auto;
+  transform: rotate(180deg);
+  padding: 0 $size-8;
+  box-sizing: content-box;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+details.addToWishlist summary svg.cross {
+  display: none;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: $size-16;
+  height: auto;
+  padding: $size-8;
+  box-sizing: content-box;
+}
+
+details.addToWishlist form {
+  display: flex;
+  flex-direction: column;
+  margin: $size-8;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-color: var(--grey-300);
+  border-style: solid;
+}
+details.addToWishlist form ul {
+  display: flex;
+  flex-direction: column;
+  padding: $size-8 0;
+}
+
+details.addToWishlist form ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: $size-16 0;
+}
+
+details.addToWishlist form ul li input {
+  width: $size-20;
+  height: $size-20;
+  cursor: pointer;
+}
+
+details.addToWishlist form ul li a {
+  @include body-100(regular);
+  margin-left: $size-8;
+  color: var(--lego-blue);
+}
+
+details.addToWishlist a.createNewWishlist {
+  color: var(--lego-blue);
+  padding: $size-16;
+  text-align: center;
+  @include body-100(regular);
+}
+
+.addToWishlistOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 98;
+}
+
+details.addToWishlist[open] ~ .addToWishlistOverlay {
+  display: flex;
+}
+
+details.addToWishlist[open] {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--grey-100);
+  background-color: white;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+  padding: $size-16;
+  summary {
+    height: $size-56;
+    p {
+      display: flex;
+    }
+    svg.heart {
+      animation: heartPop 0.75s ease-in-out;
+    }
+    svg.heart .path1{
+      fill: var(--lego-blue);
+    }
+    svg.arrow {
+      opacity: 1;
+      transform: rotate(270deg);
+    }
+    svg.cross {
+      display: flex;
+    }
+  }
+  form ul li{
+    // padding: $size-16 0;
+  }
+}
+
+// ------------------------------------------------------- Responsive
+@media only screen and (min-width: $mobile-large) {
+  details.addToWishlist {
+    right: $size-8;
+    overflow-y: scroll;
+  }
+  details.addToWishlist[open] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: $size-16;
+    background-color: rgba(255,255,255,0.25); 
+    backdrop-filter: blur(25px);
+    background-blend-mode: overlay;
+    box-shadow: none;
+  }
+  details.addToWishlist[open] summary {
+    height: auto;
+  }
+  details.addToWishlist[open] summary svg.heart rect {
+    fill: transparent;
+  }
+  details.addToWishlist[open] summary svg.cross {
+    display: none;
+  }
+  details.addToWishlist summary svg.arrow {
+    display: flex;
+  }
+  details.addToWishlist summary p,
+  details.addToWishlist[open] summary p {
+    display: inline;
+    font-size: $size-12;
+  }
+  details.addToWishlist summary:hover p {
+    text-decoration: underline;
+  }
+  details.addToWishlist[open] ~ .addToWishlistOverlay {
+    display: none;
+  }
+  details.addToWishlist form ul li {
+    padding: $size-14 0;
+  }
+  details.addToWishlist form ul li a {
+    @include body-200(regular);
+  }
+  
+  details.addToWishlist a.createNewWishlist {
+    padding: $size-8;
+    // padding-top: $size-16;
+    text-align: left;
+    @include body-200(regular);
+  }
+}
+
+// Remove browser styles for showing the Arrow
+details.addToWishlist > summary {
+  list-style: none;
+  &::-webkit-details-marker {
+    display: none;
+  }
+}

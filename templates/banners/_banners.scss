@@ -1,0 +1,230 @@
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerMedia {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bannerPicture {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.bannerPicture-img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerMedia-mark {
+  position: absolute;
+  bottom: $size-16;
+  right: $size-16;
+  height: $size-48;
+  width: auto;
+}
+
+.bannerContent {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: $size-32;
+}
+
+.bannerContent img {
+  display: none;
+}
+
+.bannerContent h3 {
+  @include subtitle-100(regular);
+  padding: $size-8 0;
+}
+
+.bannerContent p {
+  @include body-200(regular);
+  padding: $size-8 0;
+}
+
+.banner-btnGroup {
+  display: flex;
+  flex-direction: column;
+  padding: $size-8 0;
+}
+
+.banner-btnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: $size-8 0;
+}
+
+.banner[data-theme=light] .bannerContent{
+  background-color: white;
+  color: black;
+}
+
+.banner[data-theme=dark] .bannerContent{
+  background-color: black;
+  color: white;
+}
+
+.banner[data-theme=purple] .bannerContent{
+  background-color: #130e2f;
+  color: white;
+}
+
+.banner[data-theme=blue] .bannerContent{
+  background-color: var(--blue-800);
+  color: white;
+}
+
+.banner[data-theme=halloween] .bannerContent{
+  background-color: #7a36bf;
+  color: white;
+}
+
+/* ================================================================ Responsive */
+@media only screen and (min-width: $mobile-large) {
+  .bannerMedia {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  }
+  .bannerPicture {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  .bannerPicture-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .bannerContent {
+    z-index: 1;
+    width: 50%;
+  }
+  .banner[data-size=large] {
+    .bannerContent {
+      padding: 5vmax 0;
+    }
+    .bannerContent img {
+      display: flex;
+      width: auto;
+      height: $size-48;
+      margin-bottom: $size-8;
+      margin: $size-16 0;
+    }
+    .bannerContent h3 {
+      font-size: 4vmax;
+    }
+    .bannerContent p {
+      font-size: 2vmax;
+    }
+  }
+  .banner[data-size=small] {
+    .bannerContent {
+      padding: 3vmax 0;
+    }
+    .bannerContent img {
+      display: flex;
+      width: auto;
+      height: $size-32;
+      margin: $size-16 0;
+    }
+    .bannerContent h3,
+    .bannerContent p {
+      font-size: 2vmax;
+    }
+  }
+  .banner[data-theme] .bannerContent {
+    background-color: transparent;
+  }
+
+  .banner[data-position=left] {
+    .bannerContent {
+      text-align: left;
+      align-self: flex-start;
+      align-items: flex-start;
+    }
+    .banner-btnGroup {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content:left;
+    }
+    .banner-btnContainer:first-child {
+      margin-right: $size-16;
+    }
+  }
+
+  .banner[data-position=right] {
+    .bannerMedia-mark {
+      left: $size-16;
+      right: inherit;
+    }
+    .bannerContent {
+      text-align: right;
+      align-self: flex-end;
+      align-items: flex-end;
+    }
+    .banner-btnGroup {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content:right;
+    }
+    .banner-btnContainer:last-child {
+      margin-left: $size-16;
+    }
+  }
+
+  .banner[data-position=center] {
+    .bannerContent {
+      text-align: center;
+      align-self: center;
+      align-items: center;
+    }
+    .banner-btnGroup {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .banner-btnContainer {
+      margin: 0 $size-8;
+    }
+  }
+}
+
+@media only screen and (min-width: $tablet) {
+  .banner[data-size=large] {
+    .bannerContent {
+      padding: 7vmax 0;
+    }
+    .bannerContent h3 {
+      font-size: 3vmax;
+      padding: $size-16 0;
+    }
+    .bannerContent p {
+      font-size: 1.5vmax;
+    }
+  }
+  .banner[data-size=small] {
+    .bannerContent {
+      padding: 3vmax 0;
+    }
+    .bannerContent h3,
+    .bannerContent p {
+      font-size: 1.5vmax;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Big Banner</title>
+  <link rel="stylesheet" href="../styles.css" link="text/css">
+</head>
+<body>
+  <!--
+  Template options:
+  1. data-skeleton-"true" = Visualizza lo scheletro del template mostrando i bordi al suo interno;
+  2. data-theme="dark, light, blue, purple" = Cambia colore del <div bigBanner Content> quando viene mostarto su telefono.
+  3. data-postiion="left, right" = Change position of text and buttons inside the banner on large screens.
+  -->
+
+  <!-- ************************************************************************** Big Banner -->
+  <div class="bigBanner" data-skeleton="true" data-theme="dark" data-position="right">
+    <div class="bigBanner-display">
+      <picture>
+        <source type="image/webp" media="(min-width: 425px)" srcset="../../assets/images/placeholder-1800x720.jpg">
+        <img src="../../assets/images/placeholder-1080x1080.jpg">
+      </picture>
+      <img class="imageBrand" src="../../assets/images/logo.svg" alt="Brand image">
+    </div>
+    <section data-container="large">
+      <div class="bigBanner-content">
+        <img src="../../assets/images/logo.svg" alt="Logo image">
+        <h3>Big banner title</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
+        <ul class="bigBanner-btnGroup">
+          <li class="bigBanner-btnContainer">
+            <!-- Component Button Primary -->
+            <a href="" class="buttonPrimary" data-size="large" data-theme="dark">
+              <span>Compra ora</span>
+              <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+          <li class="bigBanner-btnContainer">
+            <!-- Component Button Primary -->
+            <a href="" class="buttonPrimary" data-size="large" data-theme="dark">
+              <span>Compra ora</span>
+              <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>

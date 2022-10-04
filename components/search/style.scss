@@ -1,0 +1,33 @@
+.search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    height: 40px;
+   border: 2px solid gray;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   border-top-left-radius: 25px;
+   border-top-right-radius: 25px;
+   position: absolute;
+    input{
+        padding: 10px,0px,10px,5px;
+        width: 245px;
+        height: 20px;
+        border: none;
+        &:focus {
+            border: none;
+            outline: none;
+            }
+
+    }
+    #image-one{
+        position: relative;
+       left: 10px;
+    }
+    #image-two{
+        position: relative;
+        right: 10px;
+    }
+
+}

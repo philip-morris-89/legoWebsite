@@ -1,0 +1,29 @@
+.Button-Head-Account {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: black;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  line-height: 1.1875rem;
+  font-size: 0.75rem;
+}
+@media only screen and (max-width: 1024px) {
+  .Button-Head-Account > span {
+    border: 0px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+}
+.Button-Head-Account .icon-head-svg {
+  margin-right: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

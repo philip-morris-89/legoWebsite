@@ -1,0 +1,18 @@
+.button-misida {
+  display: flex;
+  width: 106.34px;
+  height: 25px;
+}
+.button-misida .compra_ora {
+  width: 88.34px;
+  height: 16px;
+  padding: 0px 5px 0px 0px;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+.button-misida .compra_ora:hover {
+  text-decoration: underline;
+}
+.button-misida img {
+  padding: 3px;
+}/*# sourceMappingURL=buttonm.css.map */

@@ -1,0 +1,108 @@
+.buttonPrimary {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  cursor: pointer;
+  text-decoration: none;
+
+  span {
+    @include body-100(bold);
+    line-height: 1;
+  }
+
+  svg {
+    width: $size-10;
+    height: auto;
+    margin-left: $size-16;
+  }
+
+  &[data-size=small] {
+    padding: $size-10 $size-16;
+  }
+  &[data-size=large] {
+    padding: $size-16;
+  }
+
+  &[data-theme=dark] {
+    background-color: black;
+    color: white;
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &[data-theme=light] {
+    background-color: white;
+    color: black;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+
+  &[data-theme=none] {
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+
+  &[data-template=button1] {
+    border-radius: 4px;
+  }
+
+  &[data-template=button2] {
+    border-radius: 4px;
+    &[data-theme=dark] {
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &[data-theme=light] {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &[data-template=button3] {
+    border-radius: 100px;
+    padding-left: $size-24;
+    padding-right: $size-24;
+  }
+
+  &[data-template=button4] {
+    border-radius: 100px;
+    padding-left: $size-24;
+    padding-right: $size-24;
+    &[data-theme=dark] {
+      background-color: transparent;
+      color: black;
+      border: 1px solid black;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &[data-theme=light] {
+      background-color: transparent;
+      color: white;
+      border: 1px solid white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+@import '../../main.scss';
+
+.starRating {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--blue-grey-100);
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background-color: var(--lego-yellow);
+    transition: all 1s ease-in-out;
+  }
+
+  svg {
+    position: relative;
+    fill: white;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+  }
+}
+
+[data-rating="star-0"] {
+  &::before { width: 0; }
+}
+
+[data-rating="star-0.5"] {
+  &::before { width: 10%; }
+}
+
+[data-rating="star-1"] {
+  &::before { width: 20%; }
+}
+
+[data-rating="star-1.5"] {
+  &::before { width: 30%; }
+}
+
+[data-rating="star-2"] {
+  &::before { width: 40%; }
+}
+
+[data-rating="star-2.5"] {
+  &::before { width: 50%; }
+}
+
+[data-rating="star-3"] {
+  &::before { width: 60%; }
+}
+
+[data-rating="star-3.5"] {
+  &::before { width: 70%; }
+}
+
+[data-rating="star-4"] {
+  &::before { width: 80%; }
+}
+
+[data-rating="star-4.5"] {
+  &::before { width: 90%; }
+}
+
+[data-rating="star-5"] {
+  &::before { width: 100%; }
+}
