@@ -53,3 +53,13 @@
     margin-top: 0;
   }
 }
+.promoBanner-100 [data-theme=natale]{
+  .bannerContent{
+    background-color: #33a19d;
+    padding-top: 0;
+    @media only screen and (min-width: $mobile-large) {
+      background-color: transparent;
+    }
+  } 
+}
+
