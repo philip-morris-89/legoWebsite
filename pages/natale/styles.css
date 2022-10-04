@@ -2015,7 +2015,7 @@ details.addToWishlist > summary::-webkit-details-marker {
 }
 
 .promoBanner-100 {
-  margin-bottom: 4rem;
+  margin-bottom: 0;
 }
 
 .promoBanner-200 {
@@ -2061,4 +2061,8 @@ details.addToWishlist > summary::-webkit-details-marker {
   .promoBanner-100 [data-theme=natale] .bannerContent {
     background-color: transparent;
   }
+}
+
+.quickLinks-container {
+  background-color: #33a19d;
 }/*# sourceMappingURL=styles.css.map */
