@@ -2011,6 +2011,15 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
 }
 
+.bannerTrovaRegali .bannerContent {
+  padding-top: 0;
+}
+@media only screen and (min-width: 426px) {
+  .bannerTrovaRegali .bannerContent {
+    padding-right: 3rem;
+  }
+}
+
 .nataleLego .pageHeader {
   padding-top: 2rem;
   padding-bottom: 0;
@@ -2077,4 +2086,8 @@ details.addToWishlist > summary::-webkit-details-marker {
   .acquistaDaNoi {
     padding-bottom: 4rem;
   }
+}
+
+.centroVip {
+  background-color: #33a19d;
 }/*# sourceMappingURL=styles.css.map */
