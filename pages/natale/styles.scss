@@ -86,3 +86,16 @@
   padding-bottom: $size-64;
 }
 
+.setCheTuttiAmano {
+  margin-bottom: $size-64;
+}
+
+.acquistaDaNoi {
+  background-color: #cce7e6;
+  padding-bottom: $size-16;
+
+  @media only screen and (min-width: $mobile-large) {
+    padding-bottom: $size-64;
+  }
+}
+

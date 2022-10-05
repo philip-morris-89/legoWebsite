@@ -2063,4 +2063,18 @@ details.addToWishlist > summary::-webkit-details-marker {
 .ideeRegalo {
   background-color: #33a19d;
   padding-bottom: 4rem;
+}
+
+.setCheTuttiAmano {
+  margin-bottom: 4rem;
+}
+
+.acquistaDaNoi {
+  background-color: #cce7e6;
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 426px) {
+  .acquistaDaNoi {
+    padding-bottom: 4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
