@@ -8,25 +8,40 @@
 </head>
 <body>
   <!--
-  Template options:
-  1. data-skeleton-"true" = Visualizza lo scheletro del template mostrando i bordi al suo interno;
-  2. data-theme="dark, light, blue, purple" = Cambia colore del <div banner Content> quando viene mostarto su telefono.
-  3. data-postiion="left, right, center" = Change position of text and buttons inside the banner on large screens.
+  TEMPLATE OPTIONS:
+  data-skeleton-"true"        = Visualizza lo scheletro del template mostrando i bordi al suo interno;
+  data-postiion="left"        = Change position of text and buttons inside the banner on large screens.
+  data-postiion="center"      = Change position of text and buttons inside the banner on large screens.
+  data-postiion="right"       = Change position of text and buttons inside the banner on large screens.
+  data-color="white"          = Change text color to white
+  data-color="black"          = Change text color to black
+  data-background="black"     = Change banner background color on mobile
+  data-background="white"     = Change banner background color on mobile
+  data-background="purple"    = Change banner background color on mobile
+  data-background="blue"      = Change banner background color on mobile
+  data-background="halloween" = Change banner background color on mobile
+  data-background="xmas"      = Change banner background color on mobile
   -->
 
   <!-- ************************************************************************** Banner -->
-  <div class="banner" data-size="small" data-theme="dark" data-position="left" data-skeleton="false">
+  <div class="banner" data-size="large" data-color="white" data-background="black" data-position="left" data-skeleton="false">
     <section class="bannerMedia">
       <picture class="bannerPicture">
-        <source class="bannerPicture-source" type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltd44334316ded064e/75331-Exclusive-202210-VIP-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=2">
+        <!-- Image for Desktop -->
+        <source class="bannerPicture-source" type="image/webp" media="(min-width: 1024px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltd44334316ded064e/75331-Exclusive-202210-VIP-Hero-Standard-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=500&dpr=3">
+        <!-- Image for Tablet -->
+        <source class="bannerPicture-source" type="image/webp" media="(min-width: 425px)" srcset="https://www.lego.com/cdn/cs/set/assets/bltf8f58f8e70b40985/75331-Exclusive-202210-VIP-Hero-Standard-Medium.jpg?fit=crop&format=jpg&quality=80&width=900&height=350&dpr=3">
+        <!-- Image for Mobile -->
         <img class="bannerPicture-img" src="https://www.lego.com/cdn/cs/set/assets/blt8a95702fdb4260d8/75331-Exclusive-202210-VIP-Hero-Standard-Small.jpg?fit=crop&format=jpg&quality=80&width=600&height=600&dpr=2">
       </picture>
+      <!-- Additional Logo -->
       <img class="bannerMedia-mark" src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Brand image">
     </section>
     <div data-container="large">
       <section class="bannerContent">
+        <!-- Additional Logo -->
         <img src="https://www.lego.com/cdn/cs/set/assets/bltfb987f8b1414454f/starWars_logo_black_stroke_300w.png?format=png&height=60&dpr=2" alt="Logo image">
-        <h3>Banner title Lorem ipsum dolor amet.</h3>
+        <h3>Banner title Lorem ipsum dolor amet ipsum dolor amet.</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, ducimus!</p>
         <ul class="banner-btnGroup">
           <li class="banner-btnContainer">

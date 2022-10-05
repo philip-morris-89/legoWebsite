@@ -2,6 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bannerMedia {
@@ -67,164 +69,103 @@
   padding: $size-8 0;
 }
 
-.banner[data-theme=light] .bannerContent{
-  background-color: white;
-  color: black;
-}
+.banner[data-color=white] { color: white; }
+.banner[data-color=black] { color: black; }
 
-.banner[data-theme=dark] .bannerContent{
-  background-color: black;
-  color: white;
-}
-
-.banner[data-theme=purple] .bannerContent{
-  background-color: #130e2f;
-  color: white;
-}
-
-.banner[data-theme=blue] .bannerContent{
-  background-color: var(--blue-800);
-  color: white;
-}
-
-.banner[data-theme=halloween] .bannerContent{
-  background-color: #7a36bf;
-  color: white;
-}
+.banner[data-background=black]    { background-color: black; }
+.banner[data-background=purple]   { background-color: #130e2f; }
+.banner[data-background=blue]     { background-color: var(--blue-800); }
+.banner[data-background=halloween]  { background-color: #7a36bf; }
+.banner[data-background=xmas]       { background-color: #33a19d; }
 
 /* ================================================================ Responsive */
 @media only screen and (min-width: $mobile-large) {
-  .bannerMedia {
-    position: absolute; 
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  .bannerPicture {
+  .banner [data-container] {
     position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .bannerPicture-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
   }
   .bannerContent {
-    z-index: 1;
     width: 50%;
+    padding: 0;
+  }
+  .bannerContent img {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: $size-32;
+    margin-top: $size-16;
+    margin-bottom: $size-8;
+  }
+  .banner-btnGroup {
+    flex-direction: row;
   }
   .banner[data-size=large] {
-    .bannerContent {
-      padding: 5vmax 0;
-    }
-    .bannerContent img {
-      display: flex;
-      width: auto;
-      height: $size-48;
-      margin-bottom: $size-8;
-      margin: $size-16 0;
-    }
     .bannerContent h3 {
-      font-size: 4vmax;
+      font-size: 2.9vw;
     }
     .bannerContent p {
-      font-size: 2vmax;
+      font-size: 1.6vw;
     }
   }
   .banner[data-size=small] {
-    .bannerContent {
-      padding: 3vmax 0;
-    }
-    .bannerContent img {
-      display: flex;
-      width: auto;
-      height: $size-32;
-      margin: $size-16 0;
-    }
     .bannerContent h3,
     .bannerContent p {
-      font-size: 2vmax;
+      font-size: 1.8vw;
+      padding-bottom: 0;
     }
   }
-  .banner[data-theme] .bannerContent {
-    background-color: transparent;
-  }
-
   .banner[data-position=left] {
+    .bannerMedia-mark {
+      right: $size-16;
+    }
+    [data-container] {
+      align-items: flex-start;
+    }
     .bannerContent {
       text-align: left;
-      align-self: flex-start;
       align-items: flex-start;
     }
     .banner-btnGroup {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content:left;
+      justify-content: left;
     }
     .banner-btnContainer:first-child {
       margin-right: $size-16;
     }
   }
-
   .banner[data-position=right] {
     .bannerMedia-mark {
-      left: $size-16;
       right: inherit;
+      left: $size-16;
+    }
+    [data-container] {
+      align-items: flex-end;
     }
     .bannerContent {
       text-align: right;
-      align-self: flex-end;
       align-items: flex-end;
     }
     .banner-btnGroup {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content:right;
+      justify-content: right;
     }
     .banner-btnContainer:last-child {
       margin-left: $size-16;
     }
   }
-
   .banner[data-position=center] {
+    .bannerMedia-mark {
+      right: $size-16;
+    }
+    [data-container] {
+      align-items: center;
+    }
     .bannerContent {
       text-align: center;
-      align-self: center;
       align-items: center;
     }
     .banner-btnGroup {
-      flex-direction: row;
-      flex-wrap: wrap;
       justify-content: center;
     }
     .banner-btnContainer {
       margin: 0 $size-8;
-    }
-  }
-}
-
-@media only screen and (min-width: $tablet) {
-  .banner[data-size=large] {
-    .bannerContent {
-      padding: 7vmax 0;
-    }
-    .bannerContent h3 {
-      font-size: 3vmax;
-      padding: $size-16 0;
-    }
-    .bannerContent p {
-      font-size: 1.5vmax;
-    }
-  }
-  .banner[data-size=small] {
-    .bannerContent {
-      padding: 3vmax 0;
-    }
-    .bannerContent h3,
-    .bannerContent p {
-      font-size: 1.5vmax;
     }
   }
 }

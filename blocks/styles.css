@@ -386,7 +386,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
@@ -837,7 +837,7 @@ details.addToWishlist[open] summary svg.arrow {
 details.addToWishlist[open] summary svg.cross {
   display: flex;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   details.addToWishlist {
     right: 0.5rem;
     overflow-y: scroll;
@@ -930,7 +930,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   font-family: "ceraPro-Regular";
   color: black;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .pageHeader {
     padding-top: 6rem;
     padding-right: 0;
