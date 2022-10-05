@@ -30,6 +30,17 @@
   }
 }
 
+.bannerTrovaRegali {
+  .bannerContent {
+    padding-top: 0;
+  }
+  @media only screen and (min-width: $mobile-large) {
+    .bannerContent {
+      padding-right: $size-48;
+    }
+  }
+}
+
 .nataleLego .pageHeader {
   padding-top: $size-32;
   padding-bottom: 0;
@@ -97,5 +108,9 @@
   @media only screen and (min-width: $mobile-large) {
     padding-bottom: $size-64;
   }
+}
+
+.centroVip {
+  background-color: #33a19d;
 }
 
