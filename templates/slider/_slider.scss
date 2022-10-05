@@ -106,6 +106,7 @@
     flex-basis: 20%;
   }
   .slider[data-slider=disabled-desktop] .slider-ul{
-     overflow-x: initial;
+    overflow-x: initial;
+    padding-bottom: 0;
   }
 }

@@ -536,10 +536,10 @@ body {
   text-decoration: none;
 }
 .buttonPrimary span {
-  font-family: bold;
+  font-family: medium;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: "ceraPro-Bold";
+  font-family: "ceraPro-Medium";
   line-height: 1;
 }
 .buttonPrimary svg {
@@ -587,7 +587,7 @@ body {
 .buttonPrimary[data-template=button2][data-theme=dark] {
   background-color: transparent;
   color: black;
-  border: 1px solid black;
+  outline: 2px solid black;
 }
 .buttonPrimary[data-template=button2][data-theme=dark]:hover {
   text-decoration: underline;
@@ -602,18 +602,14 @@ body {
 }
 .buttonPrimary[data-template=button3] {
   border-radius: 100px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4] {
   border-radius: 100px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4][data-theme=dark] {
   background-color: transparent;
   color: black;
-  border: 2px solid black;
+  outline: 2px solid black;
 }
 .buttonPrimary[data-template=button4][data-theme=dark]:hover {
   text-decoration: underline;

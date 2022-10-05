@@ -426,10 +426,10 @@ body {
   text-decoration: none;
 }
 .buttonPrimary span {
-  font-family: bold;
+  font-family: medium;
   font-size: 1rem;
   line-height: 1.4;
-  font-family: "ceraPro-Bold";
+  font-family: "ceraPro-Medium";
   line-height: 1;
 }
 .buttonPrimary svg {
@@ -477,7 +477,7 @@ body {
 .buttonPrimary[data-template=button2][data-theme=dark] {
   background-color: transparent;
   color: black;
-  border: 1px solid black;
+  outline: 2px solid black;
 }
 .buttonPrimary[data-template=button2][data-theme=dark]:hover {
   text-decoration: underline;
@@ -492,18 +492,14 @@ body {
 }
 .buttonPrimary[data-template=button3] {
   border-radius: 100px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4] {
   border-radius: 100px;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 .buttonPrimary[data-template=button4][data-theme=dark] {
   background-color: transparent;
   color: black;
-  border: 2px solid black;
+  outline: 2px solid black;
 }
 .buttonPrimary[data-template=button4][data-theme=dark]:hover {
   text-decoration: underline;
@@ -1507,6 +1503,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
   .slider[data-slider=disabled-desktop] .slider-ul {
     overflow-x: initial;
+    padding-bottom: 0;
   }
 }
 .productCard {
@@ -2016,28 +2013,46 @@ details.addToWishlist > summary::-webkit-details-marker {
 
 .nataleLego .pageHeader {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 0;
+  background-color: #33a19d;
 }
 
 .festeDivertenti .pageHeader {
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
   background-image: url("https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=5");
   background-position: center;
   background-size: cover;
+}
+.festeDivertenti .pageHeader [data-container] {
+  flex-wrap: wrap;
+}
+.festeDivertenti .pageHeader h1 {
+  width: 100%;
 }
 .festeDivertenti ul {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-shrink: 0;
   margin: 0 0.5rem;
   margin-top: 1rem;
 }
 .festeDivertenti ul li {
   margin: 0 0.5rem;
 }
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 768px) {
   .festeDivertenti ul {
     margin-top: 0;
+  }
+  .festeDivertenti .pageHeader {
+    padding-bottom: 1.5rem;
+  }
+  .festeDivertenti .pageHeader [data-container] {
+    flex-wrap: nowrap;
+  }
+  .festeDivertenti .pageHeader h1 {
+    width: auto;
   }
 }
 
