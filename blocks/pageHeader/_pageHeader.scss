@@ -1,7 +1,7 @@
 .pageHeader {
   display: flex;
   flex-direction: column;
-  padding-top: $size-64;
+  padding-top: $size-48;
   padding-right: $size-16;
   padding-bottom: $size-32;
   padding-left: $size-16;
@@ -22,12 +22,24 @@
   }
 
   h1 {
-    @include headline-600(regular);
     color: black;
   }
 
+  &[data-size=small] {
+    h1 {
+      @include headline-600(regular);
+      font-size: 1.25rem;
+    }
+  }
+
+  &[data-size=large] {
+    h1 {
+      @include headline-600(regular);
+    }
+  }
+
   @media only screen and (min-width: $mobile-large) {
-    padding-top: $size-96;
+    padding-top: $size-64;
     padding-right: 0;
     padding-bottom: $size-48;
     padding-left: 0;
@@ -51,8 +63,16 @@
       justify-content: center;
     }
 
-    h1 {
-      @include headline-500(regular);
+    &[data-size=small] {
+      h1 {
+        @include headline-600(regular);
+      }
+    }
+
+    &[data-size=large] {
+      h1 {
+        @include headline-500(regular);
+      }
     }
   }
 }

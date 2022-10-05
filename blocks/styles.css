@@ -906,7 +906,7 @@ details.addToWishlist > summary::-webkit-details-marker {
 .pageHeader {
   display: flex;
   flex-direction: column;
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
@@ -924,15 +924,24 @@ details.addToWishlist > summary::-webkit-details-marker {
   text-align: right;
 }
 .pageHeader h1 {
+  color: black;
+}
+.pageHeader[data-size=small] h1 {
   font-family: regular;
   font-size: 1.5rem;
   line-height: 1;
   font-family: "ceraPro-Regular";
-  color: black;
+  font-size: 1.25rem;
+}
+.pageHeader[data-size=large] h1 {
+  font-family: regular;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Regular";
 }
 @media only screen and (min-width: 426px) {
   .pageHeader {
-    padding-top: 6rem;
+    padding-top: 4rem;
     padding-right: 0;
     padding-bottom: 3rem;
     padding-left: 0;
@@ -950,7 +959,13 @@ details.addToWishlist > summary::-webkit-details-marker {
   .pageHeader[data-position=center] [data-container] {
     justify-content: center;
   }
-  .pageHeader h1 {
+  .pageHeader[data-size=small] h1 {
+    font-family: regular;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+  }
+  .pageHeader[data-size=large] h1 {
     font-family: regular;
     font-size: 2rem;
     line-height: 1;
