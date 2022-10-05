@@ -386,7 +386,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
@@ -837,7 +837,7 @@ details.addToWishlist[open] summary svg.arrow {
 details.addToWishlist[open] summary svg.cross {
   display: flex;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   details.addToWishlist {
     right: 0.5rem;
     overflow-y: scroll;
@@ -1082,6 +1082,8 @@ details.addToWishlist > summary::-webkit-details-marker {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .bannerMedia {
@@ -1153,148 +1155,113 @@ details.addToWishlist > summary::-webkit-details-marker {
   padding: 0.5rem 0;
 }
 
-.banner[data-theme=light] .bannerContent {
-  background-color: white;
+.banner[data-color=white] {
+  color: white;
+}
+
+.banner[data-color=black] {
   color: black;
 }
 
-.banner[data-theme=dark] .bannerContent {
+.banner[data-background=black] {
   background-color: black;
-  color: white;
 }
 
-.banner[data-theme=purple] .bannerContent {
+.banner[data-background=purple] {
   background-color: #130e2f;
-  color: white;
 }
 
-.banner[data-theme=blue] .bannerContent {
+.banner[data-background=blue] {
   background-color: var(--blue-800);
-  color: white;
 }
 
-.banner[data-theme=halloween] .bannerContent {
+.banner[data-background=halloween] {
   background-color: #7a36bf;
-  color: white;
+}
+
+.banner[data-background=xmas] {
+  background-color: #33a19d;
 }
 
 /* ================================================================ Responsive */
-@media only screen and (min-width: 425px) {
-  .bannerMedia {
+@media only screen and (min-width: 426px) {
+  .banner [data-container] {
     position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-  }
-  .bannerPicture {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  .bannerPicture-img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .bannerContent {
-    z-index: 1;
     width: 50%;
+    padding: 0;
   }
-  .banner[data-size=large] .bannerContent {
-    padding: 5vmax 0;
-  }
-  .banner[data-size=large] .bannerContent img {
+  .bannerContent img {
     display: flex;
-    width: auto;
-    height: 3rem;
-    margin-bottom: 0.5rem;
-    margin: 1rem 0;
-  }
-  .banner[data-size=large] .bannerContent h3 {
-    font-size: 4vmax;
-  }
-  .banner[data-size=large] .bannerContent p {
-    font-size: 2vmax;
-  }
-  .banner[data-size=small] .bannerContent {
-    padding: 3vmax 0;
-  }
-  .banner[data-size=small] .bannerContent img {
-    display: flex;
+    flex-direction: column;
     width: auto;
     height: 2rem;
-    margin: 1rem 0;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .banner-btnGroup {
+    flex-direction: row;
+  }
+  .banner[data-size=large] .bannerContent h3 {
+    font-size: 2.9vw;
+  }
+  .banner[data-size=large] .bannerContent p {
+    font-size: 1.6vw;
   }
   .banner[data-size=small] .bannerContent h3,
 .banner[data-size=small] .bannerContent p {
-    font-size: 2vmax;
+    font-size: 1.8vw;
+    padding-bottom: 0;
   }
-  .banner[data-theme] .bannerContent {
-    background-color: transparent;
+  .banner[data-position=left] .bannerMedia-mark {
+    right: 1rem;
+  }
+  .banner[data-position=left] [data-container] {
+    align-items: flex-start;
   }
   .banner[data-position=left] .bannerContent {
     text-align: left;
-    align-self: flex-start;
     align-items: flex-start;
   }
   .banner[data-position=left] .banner-btnGroup {
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: left;
   }
   .banner[data-position=left] .banner-btnContainer:first-child {
     margin-right: 1rem;
   }
   .banner[data-position=right] .bannerMedia-mark {
-    left: 1rem;
     right: inherit;
+    left: 1rem;
+  }
+  .banner[data-position=right] [data-container] {
+    align-items: flex-end;
   }
   .banner[data-position=right] .bannerContent {
     text-align: right;
-    align-self: flex-end;
     align-items: flex-end;
   }
   .banner[data-position=right] .banner-btnGroup {
-    flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: right;
   }
   .banner[data-position=right] .banner-btnContainer:last-child {
     margin-left: 1rem;
   }
+  .banner[data-position=center] .bannerMedia-mark {
+    right: 1rem;
+  }
+  .banner[data-position=center] [data-container] {
+    align-items: center;
+  }
   .banner[data-position=center] .bannerContent {
     text-align: center;
-    align-self: center;
     align-items: center;
   }
   .banner[data-position=center] .banner-btnGroup {
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
   }
   .banner[data-position=center] .banner-btnContainer {
     margin: 0 0.5rem;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .banner[data-size=large] .bannerContent {
-    padding: 7vmax 0;
-  }
-  .banner[data-size=large] .bannerContent h3 {
-    font-size: 3vmax;
-    padding: 1rem 0;
-  }
-  .banner[data-size=large] .bannerContent p {
-    font-size: 1.5vmax;
-  }
-  .banner[data-size=small] .bannerContent {
-    padding: 3vmax 0;
-  }
-  .banner[data-size=small] .bannerContent h3,
-.banner[data-size=small] .bannerContent p {
-    font-size: 1.5vmax;
   }
 }
 /* =========================================================== Template 300 */
@@ -1334,7 +1301,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   font-family: "ceraPro-Medium";
   padding: 0.5rem 0;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .quickLinks ul {
     justify-content: center;
   }
@@ -1394,14 +1361,14 @@ details.addToWishlist > summary::-webkit-details-marker {
 
 /* Scrollbar Track */
 .slider-ul::-webkit-scrollbar-track {
-  background: var(--grey-300);
+  background: rgba(0, 0, 0, 0.15);
   border-radius: 2px;
   margin: 0 1rem;
 }
 
 /* Scrollbar Handle */
 .slider-ul::-webkit-scrollbar-thumb {
-  background: var(--grey-600);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 2px;
   cursor: pointer;
 }
@@ -1424,7 +1391,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   height: auto;
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .slider-ul {
     padding: 0;
     padding-bottom: 3rem;
@@ -1625,7 +1592,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   padding-top: 0;
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .productCard-imgContainer {
     padding: 1rem;
   }
@@ -1882,7 +1849,7 @@ details.addToWishlist > summary::-webkit-details-marker {
   font-family: "ceraPro-Regular";
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   .footer [data-container=large] {
     padding: 0;
   }

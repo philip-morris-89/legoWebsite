@@ -386,7 +386,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
@@ -804,7 +804,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
@@ -1592,7 +1592,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
@@ -2080,7 +2080,7 @@ html[data-display=mobile] body {
   max-width: 1280px;
   margin: 0 auto;
 }
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 426px) {
   [data-container=large] {
     padding: 0 2rem;
   }
