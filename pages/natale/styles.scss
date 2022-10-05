@@ -32,30 +32,47 @@
 
 .nataleLego .pageHeader {
   padding-top: $size-32;
-  padding-bottom: $size-32;
-  // background-color: #33a19d;
+  padding-bottom: 0;
+  background-color: #33a19d;
 }
 
 .festeDivertenti {
   .pageHeader {
-    padding: $size-24 0;
+    padding-top: $size-24;
+    padding-bottom: $size-8;
     background-image: url('https://www.lego.com/cdn/cs/set/assets/blt5eb4e078c4172c19/Holiday2022-Landing-202208-Inpage-Nav-Large.jpg?fit=crop&format=jpg&quality=80&width=1600&height=90&dpr=5');
     background-position: center;
     background-size: cover;
+    [data-container] {
+      flex-wrap: wrap;
+    }
+    h1 {
+      width: 100%;
+    }
   }
-
   ul {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-shrink: 0;
     margin: 0 $size-8;
     margin-top: $size-16;
-  
     li {
       margin: 0 $size-8;
     }
-    @media only screen and (min-width: $mobile-large) {
+  }
+  @media only screen and (min-width: $tablet) {
+    ul { 
       margin-top: 0;
+    }
+    .pageHeader {
+      padding-bottom: $size-24;
+      & [data-container] {
+        flex-wrap: nowrap;
+      }
+      h1 {
+        width: auto;
+      }
     }
   }
 }

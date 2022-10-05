@@ -9,7 +9,7 @@
   text-decoration: none;
 
   span {
-    @include body-100(bold);
+    @include body-100(medium);
     line-height: 1;
   }
 
@@ -63,7 +63,7 @@
     &[data-theme=dark] {
       background-color: transparent;
       color: black;
-      border: 1px solid black;
+      outline: 2px solid black;
       &:hover {
         text-decoration: underline;
       }
@@ -80,18 +80,14 @@
 
   &[data-template=button3] {
     border-radius: 100px;
-    padding-left: $size-16;
-    padding-right: $size-16;
   }
 
   &[data-template=button4] {
     border-radius: 100px;
-    padding-left: $size-16;
-    padding-right: $size-16;
     &[data-theme=dark] {
       background-color: transparent;
       color: black;
-      border: 2px solid black;
+      outline: 2px solid black;
       &:hover {
         text-decoration: underline;
       }
