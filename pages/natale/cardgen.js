@@ -37,9 +37,12 @@ let data=[
 ]
 
 function injectCard(){
+  //cardPlace per individuare dove piazzare il contenuto
     const cardPlace = document.querySelector("#cardPlace");
     console.log(cardPlace);
+    //forEach cicla gli elementi creando una card per ogni object dell'array
     data.forEach(element => {
+      //in mezzo ai backtick `` va inserito l'HTML della card
         cardPlace.insertAdjacentHTML("beforeend",`
         <li class="slider-li">
             <!--CARD INIZIO-->
@@ -117,6 +120,6 @@ function injectCard(){
     });
 
 }
-
+//listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
 document.addEventListener("load",injectCard());
 
