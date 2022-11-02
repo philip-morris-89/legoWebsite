@@ -34,10 +34,11 @@ let data=[
         details: "Esclusivo",
         star: "2"
     }
+    
 ]
 
 function injectCard(){
-    const cardPlace = document.querySelector("#cardPlace");
+    const cardPlace = document.querySelector("#cardPlace2");
     console.log(cardPlace);
     data.forEach(element => {
         cardPlace.insertAdjacentHTML("beforeend",`
@@ -84,8 +85,7 @@ function injectCard(){
                 </details>
                 <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
                 <div class="productCard-badges">
-                  <div class="productCard-badge"><span>${element.details}</span></div>
-
+                  <div class="productCard-badge"><span id="detail-span">${element.details}</span></div> 
                 </div>
                 <a class="productCard-imgContainer" href="">
                   <img
@@ -118,6 +118,9 @@ function injectCard(){
     });
 
 }
+
+
+
 
 document.addEventListener("load",injectCard());
 
