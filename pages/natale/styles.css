@@ -2011,6 +2011,11 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
 }
 
+.promoBanner-200 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
 .bannerTrovaRegali .bannerContent {
   padding-top: 0;
 }
