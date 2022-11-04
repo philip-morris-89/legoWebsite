@@ -1522,17 +1522,6 @@ details.addToWishlist > summary::-webkit-details-marker {
   overflow: hidden;
 }
 
-.productCard-wishlist {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.5rem;
-  z-index: 2;
-  font-size: 12px;
-}
-
 .productCard-badges {
   display: flex;
   flex-direction: row;

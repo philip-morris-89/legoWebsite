@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css" type="text/css">
+  <title>Product Card</title>
+</head>
+<style type="text/css">
+  .sectionForTemplate1 {
+    background-color: white;
+    padding: 48px 32px;
+  }
+  .sectionForTemplate2 {
+    background-color:limegreen;
+    padding: 48px 32px;
+  }
+  .sectionForTemplate3 {
+    background-color:dodgerblue;
+    padding: 48px 32px;
+  }
+</style>
+<body>
+
+  <!-- This section is here only to help display and show the product card. -->
+  <section class="sectionForTemplate1">
+    <h2>data-card="template1" : <br><br>Questa card viene usata nelle sezioni dove il colore di Background è bianco. Questo è lo stato difault</h2>
+    <br>
+    <br>
+
+    <!-- Product card: data-card="template1" -->
+    <div class="productCard" data-card="template1" data-skeleton="false">
+      <div class="productCard-display">
+        <div class="productCard-badges">
+          <div class="productCard-badge"><span>Novità</span></div>
+          <div class="productCard-badge"><strong>-40%</strong></div>
+        </div>
+        <a class="productCard-imgContainer" href="">
+          <img src="https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+        </a>
+      </div>
+      <div class="productCard-content">
+        <a href="" class="productCard-title">Product title</a>
+        <div class="productCard-ratings">
+          <!-- Component Star Ratings -->
+          <div class="starRatings" data-rating="star-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h6 class="productCard-price">$599.99</h6>
+        <div class="productCard-button">
+          <!-- Component Add to cart button -->
+          <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
+        </div>
+      </div>
+    </div><!-- Product Card -->
+
+  </section>
+
+
+
+  <!-- This section is here only to help display and show the product card. -->
+  <section class="sectionForTemplate2">
+    <h2>data-card="template2" :<br><br>Qual'ora il colore di sfondo della sezione è diversa dal bianco la card viene raggruppata e visualiazzata di bianco aggiungendo i padding al suo interno.</h2>
+    <br>
+    <br>
+
+    <!-- Product card: data-card="template1" -->
+    <div class="productCard" data-card="template2">
+      <div class="productCard-display">
+        <div class="productCard-badges">
+          <div class="productCard-badge"><span>Novità</span></div>
+          <div class="productCard-badge"><strong>-40%</strong></div>
+        </div>
+        <a class="productCard-imgContainer" href="">
+          <img src="https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+        </a>
+      </div>
+      <div class="productCard-content">
+        <a href="" class="productCard-title">Product title</a>
+        <div class="productCard-ratings">
+          <!-- Component Star Ratings -->
+          <div class="starRatings" data-rating="star-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h6 class="productCard-price">$599.99</h6>
+        <div class="productCard-button">
+          <!-- Component Add to cart button -->
+          <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
+        </div>
+      </div>
+    </div><!-- Product Card -->
+
+  </section>
+
+
+
+  <!-- This section is here only to help display and show the product card. -->
+  <section class="sectionForTemplate3">
+    <h2>data-card="template2" :<br><br>Questo è lo stesso template della card precedente con la sola differenza del bottone 'Aggiungi al Carello' che si ottiene cambianado nel tag del bottone stesso data-theme da "orange" a "red".</h2>
+    <br>
+    <br>
+
+
+    <!-- Product card: data-card="template1" -->
+    <div class="productCard" data-card="template2" data-skeleton="false">
+      <div class="productCard-display">
+        <div class="productCard-badges">
+          <div class="productCard-badge"><span>Novità</span></div>
+          <div class="productCard-badge"><strong>-40%</strong></div>
+        </div>
+        <a class="productCard-imgContainer" href="">
+          <img src="https://www.lego.com/cdn/cs/set/assets/bltdcfa4924bc8abd0a/21335.png?fit=bounds&format=png&width=320&height=320&dpr=2" alt="Product image">
+        </a>
+      </div>
+      <div class="productCard-content">
+        <a href="" class="productCard-title">Product title</a>
+        <div class="productCard-ratings">
+          <!-- Component Star Ratings -->
+          <div class="starRatings" data-rating="star-2.5">
+            <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
+              <g id="Layer_1-2" data-name="Layer 1">
+                <path class="cls-1" d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"/>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <h6 class="productCard-price">$599.99</h6>
+        <div class="productCard-button">
+          <!-- Component Add to cart button -->
+          <button class="buttonATC" data-size="large" data-theme="red">Aggiungi al Carrello</button>
+        </div>
+      </div>
+    </div><!-- Product Card -->
+
+  </section>
+
+</body>
+</html>

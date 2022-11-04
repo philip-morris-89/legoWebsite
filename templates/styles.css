@@ -1659,6 +1659,167 @@ details.addToWishlist > summary::-webkit-details-marker {
     height: 25%;
   }
 }
+.productCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productCard-display {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  overflow: hidden;
+}
+
+.productCard-wishlist {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+  z-index: 2;
+  font-size: 12px;
+}
+
+.productCard-badges {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.productCard-badges .productCard-badge {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  padding-right: 0;
+  font-family: medium;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+  font-size: 12px;
+}
+.productCard-badges .productCard-badge span, .productCard-badges .productCard-badge strong {
+  padding: 0.5rem;
+}
+.productCard-badges .productCard-badge span {
+  background-color: var(--lego-yellow);
+  color: black;
+  line-height: 1;
+}
+.productCard-badges .productCard-badge strong {
+  background-color: var(--red-500);
+  color: white;
+  line-height: 1;
+}
+
+.productCard-imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  z-index: 1;
+  transition: all 0.5s ease-out;
+}
+.productCard-imgContainer img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.productCard-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.productCard-title {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-decoration: none;
+  align-self: flex-start;
+  padding: 0.5rem 0;
+  color: black;
+  font-family: medium;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Medium";
+}
+.productCard-title:hover {
+  text-decoration: underline;
+}
+
+.productCard-ratings {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding: 0.5rem 0;
+  width: 30%;
+}
+
+.productCard-price {
+  display: flex;
+  flex-direction: column;
+  font-family: bold;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  font-family: "ceraPro-Bold";
+}
+
+.productCard-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+[data-card=template1] {
+  background-color: transparent;
+}
+[data-card=template1] .productCard-content {
+  padding-top: 0.5rem;
+}
+[data-card=template1] .productCard-display {
+  border: 1px solid var(--grey-300);
+}
+
+[data-card=template2] {
+  background-color: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+[data-card=template2] .productCard-display {
+  border-bottom: 1px solid var(--grey-300);
+}
+[data-card=template2] .productCard-content {
+  padding: 1rem;
+}
+[data-card=template2] .productCard-title {
+  padding-top: 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .productCard-imgContainer {
+    padding: 1rem;
+  }
+  .productCard-display:hover .productCard-imgContainer {
+    padding: 0;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
