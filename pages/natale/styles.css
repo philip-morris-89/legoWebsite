@@ -972,6 +972,8 @@ details.addToWishlist > summary::-webkit-details-marker {
 .navBar {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 99;
 }
 
 .navBar-row1 {
@@ -1052,36 +1054,13 @@ details.addToWishlist > summary::-webkit-details-marker {
   flex-direction: row;
 }
 
-.navBar-row2-col2 {
+.navBar-row2-col2,
+.sideBar,
+.navBarOverlay {
   display: none;
-}
-.navBar-row2-col2 a {
-  text-decoration: none;
-  color: black;
-  font-family: medium;
-  font-size: 1rem;
-  line-height: 1.4;
-  font-family: "ceraPro-Medium";
-  text-transform: uppercase;
-}
-.navBar-row2-col2 a:hover {
-  text-decoration: underline;
-  color: black;
-}
-.navBar-row2-col2 a.navBarButton {
-  background-color: white;
-  color: var(--red-500);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-}
-.navBar-row2-col2 a.navBarButton:hover {
-  background-color: black;
-  color: white;
-  text-decoration: none;
 }
 
 .navBar-row2-col1 li,
-.navBar-row2-col2 li,
 .navBar-row2-col3 li {
   display: flex;
   flex-direction: column;
@@ -1124,15 +1103,168 @@ details.addToWishlist > summary::-webkit-details-marker {
   .navBar-row2-col1 li:first-child {
     display: none;
   }
+  .navBar-row2-col1 {
+    z-index: 10;
+  }
   .navBar-row2-col2 {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    height: 100%;
+    z-index: 10;
   }
-  .navBar-row2-col2 li {
+  .navBar-menu {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  .navBar-menu .navBar-menuItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 0 1.5rem;
   }
-  .navBar-row2-col2 li:first-child {
+  .navBar-menu .navBar-menuItem:first-child {
     padding-left: 3.5rem;
+  }
+  .navBar-menu .navBar-menuItem a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-family: medium;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "ceraPro-Medium";
+    text-transform: uppercase;
+  }
+  .navBar-menu .navBar-menuItem a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    display: none;
+  }
+  .navBar-menu .navBar-menuItem a.active::after {
+    display: block;
+  }
+  .navBar-menu .navBar-menuItem a:hover {
+    text-decoration: none;
+    color: black;
+  }
+  .navBar-menu .navBar-menuItem a:hover::after {
+    display: block;
+  }
+  .navBar-menu .navBar-menuItem a.navBarButton {
+    background-color: white;
+    color: var(--red-500);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+  }
+  .navBar-menu .navBar-menuItem a.navBarButton:hover {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+  }
+  .navBar-menu .navBar-menuItem a.navBarButton:hover::after {
+    display: none;
+  }
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .navBar-subMenu-container {
+    display: none;
+    flex-direction: row;
+    opacity: 0;
+    padding: 1rem 0;
+    align-self: flex-start;
+  }
+  .navBar-subMenu-container.active {
+    display: flex;
+    -webkit-animation: fadeIn 0.66s ease-out forwards;
+            animation: fadeIn 0.66s ease-out forwards;
+  }
+  .navBar-subMenu-container ul {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 300px;
+  }
+  .navBar-subMenu-container ul.navBar-subMenu-left {
+    padding: 0 3rem;
+    padding-left: 3.5rem;
+  }
+  .navBar-subMenu-container ul.navBar-subMenu-right {
+    padding: 0 3rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+    display: none;
+  }
+  .navBar-subMenu-container ul.navBar-subMenu-right.subActive {
+    display: flex;
+    -webkit-animation: fadeIn 0.5s ease-out forwards;
+            animation: fadeIn 0.5s ease-out forwards;
+  }
+  .navBar-subMenu-container ul.navBar-subMenu-right li:first-child {
+    text-transform: uppercase;
+  }
+  .navBar-subMenu-container ul li {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem 0;
+  }
+  .navBar-subMenu-container ul li:first-child {
+    padding-top: 0;
+  }
+  .navBar-subMenu-container ul li a {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    font-family: regular;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-family: "ceraPro-Regular";
+    color: black;
+    position: relative;
+  }
+  .navBar-subMenu-container ul li a:hover {
+    text-decoration: underline;
+    color: var(--lego-blue);
+  }
+  .navBar-subMenu-container ul li a {
+    justify-content: space-between;
+  }
+  .navBar-subMenu-container ul li a.subActive {
+    text-decoration: underline;
+    color: black;
+  }
+  .navBar-subMenu-container ul li a.navBar-subMenu-linkExpand {
+    flex-grow: 1;
+  }
+  .navBar-subMenu-container ul li a span {
+    flex-grow: 1;
+  }
+  .navBar-subMenu-container ul li a svg {
+    width: 0.5rem;
+    height: auto;
+    color: rgba(0, 0, 0, 0.5);
+    margin-left: 1rem;
   }
   .navBar-row2-col3 li {
     padding: 0 1rem;
@@ -1142,6 +1274,79 @@ details.addToWishlist > summary::-webkit-details-marker {
   }
   .navBar-row2-col3 li:nth-child(2) {
     display: none;
+  }
+  .sideBar {
+    display: none;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transform: translate3d(0);
+    overflow-x: hidden;
+    justify-content: right;
+  }
+  .sideBar a.sideBarClose {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    background-color: white;
+    cursor: pointer;
+    width: 6rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: center;
+    transform: translate3d(0);
+  }
+  .sideBar a.sideBarClose svg {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  .sideBar a.sideBarClose:hover svg {
+    color: black;
+  }
+  .sideBar.active {
+    display: flex;
+    -webkit-animation: slideIn 0.3s ease-in-out forwards;
+            animation: slideIn 0.3s ease-in-out forwards;
+  }
+  @-webkit-keyframes slideIn {
+    0% {
+      width: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      width: 784px;
+      box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
+    }
+  }
+  @keyframes slideIn {
+    0% {
+      width: 0;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      width: 784px;
+      box-shadow: 0 0 6rem rgba(0, 0, 0, 0.5);
+    }
+  }
+  .navBarOverlay {
+    display: none;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.75);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translate3d(0);
+    cursor: pointer;
+  }
+  .navBarOverlay.active {
+    display: block;
+    -webkit-animation: fadeIn 0.3s ease-in-out forwards;
+            animation: fadeIn 0.3s ease-in-out forwards;
   }
 }
 .banner {
