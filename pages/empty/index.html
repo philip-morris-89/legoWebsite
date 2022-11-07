@@ -11,7 +11,7 @@
 <body>
 
   <!-- ************************************************************************** Navbar -->
-  <nav class="navBar" data-skeleton="false">
+  <nav class="navBar">
     <div class="navBar-row1">
       <ul class="navBar-row1-col1">
         <li>Link</li><!-- Area giochi -->
@@ -32,34 +32,239 @@
         </li>
       </ul>
       <ul class="navBar-row1-col3">
-        <li>Account</li><!-- Profile/Avatar -->
-        <li>VIP</li><!-- VIP -->
+        <li>Li 1</li><!-- Profile/Avatar -->
+        <li>Li 2</li><!-- VIP -->
       </ul>
     </div>
     <div class="navBar-row2">
       <ul class="navBar-row2-col1">
         <li>Menu</li><!-- Hamburger Menu -->
         <li class="navBarLogo">
-          <a href="../home/index.html">
-           <img src="../../assets/images/logo.svg" alt="Logo">
-          </a>
-         
+          <img src="../../assets/images/logo.svg" alt="Logo">
         </li><!-- Lego logo -->
       </ul>
-      <ul class="navBar-row2-col2">
-        <li>
-          <a href="">Acquista</a>
-        </li>
-        <li>
-          <a href="">Scopri</a>
-        </li>
-        <li>
-          <a href="">Aiuto</a>
-        </li>
-        <li>
-          <a class="navBarButton" href="">Natale</a>
-        </li>
-      </ul>
+      <div class="navBar-row2-col2">
+        <ul class="navBar-menu">
+          <li class="navBar-menuItem">
+            <a data-tab="acquista" href="#">Acquista</a>
+          </li>
+          <li class="navBar-menuItem">
+            <a data-tab="scopri" href="#">Scopri</a>
+          </li>
+          <li class="navBar-menuItem">
+            <a data-tab="aiuto" href="#">Aiuto</a>
+          </li>
+          <li class="navBar-menuItem">
+            <a class="navBarButton" href="">Natale</a>
+          </li>
+        </ul>
+
+        <!-- Acquista -->
+        <div id="acquista" class="navBar-subMenu-container">
+          <!-- ################################################### Sub menu left -->
+          <ul class="navBar-subMenu-left">
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="setPerTema" href="#">
+                <span>Set per tema</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="eta" href="#">
+                <span>Età</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="prezzi" href="#">
+                <span>Prezzi</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="merchandising" href="#">
+                <span>Merchandising LEGO</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="interessi" href="#">
+                <span>Interessi</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="pick" href="#">
+                <span>Pick and Build</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li><a href="">Set Esclusivi</a></li>
+            <li><a href="">Novità</a></li>
+            <li><a href="">I più venduti</a></li>
+            <li><a href="">Home decor</a></li>
+            <li><a href="">Sconti e offerte</a></li>
+            <li><a href="">Disponibile a breve</a></li>
+            <li><a href="">Ultima occasione per acquistarli</a></li>
+          </ul>
+
+          <!-- ################################################### Sub menu right -->
+
+          <!-- Set Per tema -->
+          <ul class="navBar-subMenu-right" id="setPerTema">
+            <li><a href="">Visualizza tutti i temi</a></li>
+            <li><a href="">Architecture</a></li>
+            <li><a href="">Batman™</a></li>
+            <li><a href="">BOOST</a></li>
+            <li><a href="">BrickHeadz</a></li>
+            <li><a href="">Brick Sketches™</a></li>
+            <li><a href="">Classic</a></li>
+            <li><a href="">Creator 3-in-1</a></li>
+            <li><a href="">Creator Expert</a></li>
+            <li><a href="">DC</a></li>
+            <li><a href="">Disney™</a></li>
+            <li><a href="">Topolino e amici Disney</a></li>
+            <li><a href="">Lightyear di Disney e Pixar</a></li>
+          </ul>
+          
+          <!-- Età -->
+          <ul class="navBar-subMenu-right" id="eta">
+            <li><a href="">Visualizza tutte le età</a></li>
+            <li><a href="">1.5+</a></li>
+            <li><a href="">4+</a></li>
+            <li><a href="">6+</a></li>
+            <li><a href="">9+</a></li>
+            <li><a href="">13+</a></li>
+            <li><a href="">18+</a></li>
+          </ul>
+
+          <!-- Prezzi -->
+          <ul class="navBar-subMenu-right" id="prezzi">
+            <li><a href="">Visualizza tutti i prezzi</a></li>
+            <li><a href="">Meno di 20 €</a></li>
+            <li><a href="">20 € - 50 €</a></li>
+            <li><a href="">50 € - 100 €</a></li>
+            <li><a href="">100 € - 200 €</a></li>
+            <li><a href="">Più di 200 €</a></li>
+          </ul>
+
+          <!-- Merchandising LEGO -->
+          <ul class="navBar-subMenu-right" id="merchandising">
+            <li><a href="">VISUALIZZA TUTTO IL MERCHANDISING LEGO</a></li>
+            <li><a href="">Accessori</a></li>
+            <li><a href="">Zaini e portavivande</a></li>
+            <li><a href="">Libri</a></li>
+            <li><a href="">Portachiavi</a></li>
+            <li><a href="">Giocattoli di peluche</a></li>
+            <li><a href="">Bustina</a></li>
+            <li><a href="">Puzzle e giochi da tavolo</a></li>
+            <li><a href="">Gioco di ruolo e costumi</a></li>
+            <li><a href="">Cancelleria</a></li>
+            <li><a href="">Contenitori</a></li>
+          </ul>
+
+          <!-- Interessi -->
+          <ul class="navBar-subMenu-right" id="interessi">
+            <li><a href="">VISUALIZZA TUTTI GLI INTERESSI</a></li>
+            <li><a href="">Per gli adulti</a></li>
+            <li><a href="">Animali</a></li>
+            <li><a href="">Arts and Crafts</a></li>
+            <li><a href="">Edifici</a></li>
+            <li><a href="">Auto</a></li>
+            <li><a href="">Programmazione per i bambini</a></li>
+            <li><a href="">Draghi</a></li>
+            <li><a href="">Fantasy</a></li>
+            <li><a href="">Film</a></li>
+            <li><a href="">Gaming</a></li>
+            <li><a href="">Impara a costruire</a></li>
+            <li><a href="">Musica</a></li>
+          </ul>
+
+          <!-- PICK AND BUILD -->
+          <ul class="navBar-subMenu-right" id="pick">
+            <li><a href="">PICK AND BUILD</a></li>
+            <li><a href="">Pick a Brick</a></li>
+            <li><a href="">Kit e accessori per mattoncini</a></li>
+            <li><a href="">Build a Minifigure</a></li>
+          </ul>
+        </div>
+
+        <!-- Scopri -->
+        <div id="scopri" class="navBar-subMenu-container">
+          <!-- ################################################### Sub menu left -->
+          <ul class="navBar-subMenu-left">
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="valori" href="#">
+                <span>I nostri valori</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="app" href="#">
+                <span>Le nostre app</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li>
+              <a class="navBar-subMenu-linkExpand" data-subtab="riviste" href="#">
+                <span>Le nostre riviste</span>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </li>
+            <li><a href="">Tutti i temi LEGO</a></li>
+            <li><a href="">Tutti gli interessi LEGO</a></li>
+            <li><a href="">LEGO® CON</a></li>
+            <li><a href="">Per gli adulti</a></li>
+            <li><a href="">Rebuild the World</a></li>
+            <li><a href="">Programma premi VIP</a></li>
+            <li><a href="">Decorator 3D DOTS</a></li>
+            <li><a href="">LEGO® Mosaic Maker</a></li>
+            <li><a href="">90 anni di gioco</a></li>
+          </ul>
+
+          <!-- ################################################### Sub menu right -->
+
+          <!-- I nostri valori -->
+          <ul class="navBar-subMenu-right" id="valori">
+            <li><a href="">Informazioni su LEGO Group</a></li>
+            <li><a href="">Notizie LEGO</a></li>
+            <li><a href="">Sostenibilità</a></li>
+          </ul>
+          
+          <!-- Le nostre app -->
+          <ul class="navBar-subMenu-right" id="app">
+            <li><a href="">LEGO Builder</a></li>
+            <li><a href="">App LEGO Life</a></li>
+          </ul>
+
+          <!-- Le nostre riviste -->
+          <ul class="navBar-subMenu-right" id="riviste">
+            <li><a href="">Cataloghi LEGO</a></li>
+          </ul>
+        </div>
+
+        <!-- Aiuto -->
+        <div id="aiuto" class="navBar-subMenu-container">
+          <!-- ################################################### Sub menu left -->
+          <ul class="navBar-subMenu-left">
+            <li><a href="">Verifica stato ordine</a></li>
+            <li><a href="">Consegne e resi</a></li>
+            <li><a href="">Trova uno Store</a></li>
+            <li><a href="">Istruzioni per la costruzione</a></li>
+            <li><a href="">Domande frequenti</a></li>
+            <li><a href="">Contattaci</a></li>
+            <li><a href="">Pezzi di ricambio</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="sideBar">
+        <a class="sideBarClose">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 fgDCVZ"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg>
+        </a>
+      </div>
+      <div class="navBarOverlay closeSideBar"></div>
+
       <ul class="navBar-row2-col3">
         <li>Li 1</li><!-- Search icon -->
         <li>Li 2</li><!-- Avatar/Profile -->
@@ -253,6 +458,7 @@
     </div>
   </footer>
 
+  <script src="../../templates/navBar/navbar.js"></script>
 </body>
 
 </html>
