@@ -1,6 +1,8 @@
 .navBar {
   display: flex;
   flex-direction: column;
+  position: relative;
+  z-index: 99;
 }
 
 .navBar-row1 {
@@ -86,33 +88,13 @@
   flex-direction: row;
 }
 
-.navBar-row2-col2 {
+.navBar-row2-col2,
+.sideBar,
+.navBarOverlay {
   display: none;
-  a {
-    text-decoration: none;
-    color: black;
-    @include body-100(medium);
-    text-transform: uppercase;
-  }
-  a:hover {
-    text-decoration: underline;
-    color: black;
-  }
-  a.navBarButton {
-    background-color: white;
-    color: var(--red-500);
-    padding: $size-8 $size-16;
-    border-radius: 4px;
-  }
-  a.navBarButton:hover {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-  }
 }
 
 .navBar-row2-col1,
-.navBar-row2-col2,
 .navBar-row2-col3 {
   li {
     display: flex;
@@ -124,6 +106,8 @@
 }
 
 @media only screen and (min-width: $laptop) {
+  $menuLeftOffset: $size-56;
+
   .navBar-row1 {
     flex-direction: row;
     align-items: center;
@@ -165,16 +149,152 @@
     display: none;
   }
 
+  .navBar-row2-col1 {
+    z-index: 10;
+  }
+
   .navBar-row2-col2 {
     display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    height: 100%;
+    z-index: 10;
+  }
 
-    li {
+  .navBar-menu {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    flex-shrink: 0;
+    .navBar-menuItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 0 $size-24;
     }
+    .navBar-menuItem:first-child {
+      padding-left: $menuLeftOffset;
+    }
+    .navBar-menuItem a {
+      position: relative;
+      text-decoration: none;
+      color: black;
+      @include body-100(medium);
+      text-transform: uppercase;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        display: none;
+      }
+      &.active::after {
+        display: block;
+      }
+    }
+    .navBar-menuItem a:hover {
+      text-decoration: none;
+      color: black;
+      &::after {
+        display: block;
+      }
+    }
+    .navBar-menuItem a.navBarButton {
+      background-color: white;
+      color: var(--red-500);
+      padding: $size-8 $size-16;
+      border-radius: 4px;
+    }
+    .navBar-menuItem a.navBarButton:hover {
+      background-color: black;
+      color: white;
+      text-decoration: none;
+      &::after{
+        display: none;
+      }
+    }
+  }
 
-    li:first-child {
-      padding-left: $size-56;
+  @keyframes fadeIn {
+    0%    { opacity: 0; }
+    100%  { opacity: 1; }
+  }
+
+  .navBar-subMenu-container {
+    display: none;
+    flex-direction: row;
+    opacity: 0;
+    padding: $size-16 0;
+    align-self: flex-start;
+    &.active {
+      display: flex;
+      animation: fadeIn 0.66s ease-out forwards;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      flex-shrink: 0;
+      width: 300px;
+    }
+    ul.navBar-subMenu-left {
+      padding: 0 $size-48;
+      padding-left: $menuLeftOffset;
+    }
+    ul.navBar-subMenu-right {
+      padding: 0 $size-48;
+      border-left: 1px solid rgba(0,0,0,0.15);
+      display: none;
+      &.subActive {
+        display: flex;
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+
+      li:first-child {
+        text-transform: uppercase;
+      }
+    }
+    ul li {
+      display: flex;
+      flex-direction: row;
+      padding: $size-8 0;
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+    ul li a {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      @include body-100(regular);
+      color: black;
+      position: relative;
+    }
+    ul li a:hover {
+      text-decoration: underline;
+      color: var(--lego-blue);
+    }
+    ul li a {
+      justify-content: space-between;
+    }
+    ul li a.subActive {
+      text-decoration: underline;
+      color: black;
+    }
+    ul li a.navBar-subMenu-linkExpand {
+      flex-grow: 1;
+    }
+    ul li a span {
+      flex-grow: 1;
+    }
+    ul li a svg {
+      width: $size-8;
+      height: auto;
+      color: rgba(0,0,0,0.5);
+      margin-left: $size-16;
     }
   }
 
@@ -188,6 +308,72 @@
 
     li:nth-child(2) {
       display: none;
+    }
+  }
+
+  .sideBar {
+    display: none;
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transform: translate3d(0);
+    overflow-x: hidden;
+    justify-content: right;
+    a.sideBarClose {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 0;
+      background-color: white;
+      cursor: pointer;
+      width: $size-96;
+      height: $size-80;
+      align-items: center;
+      justify-content: center;
+      transform: translate3d(0);
+      svg {
+        color: rgba(0,0,0,0.5);
+      }
+      &:hover svg {
+        color: black;
+      }
+    }
+    &.active {
+      display: flex;
+      @keyframes slideIn {
+        0% {
+          width: 0;
+          box-shadow: 0 0 0 rgba(0,0,0,0);
+        }
+        100% {
+          width: calc(704px + 80px);
+          box-shadow: 0 0 $size-96 rgba(0,0,0,0.5);
+        }
+      }
+      animation: slideIn 0.3s ease-in-out forwards;
+    }
+  }
+  .navBarOverlay {
+    display: none;
+    position: fixed;
+    // background-color: rgba(255,255,255,0.25); 
+    background-color: rgba(0,0,0,0.75); 
+    // -webkit-backdrop-filter: blur(25px);
+    // backdrop-filter: blur(25px);
+    // background-blend-mode: overlay;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    transform: translate3d(0);
+    cursor: pointer;
+    &.active {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out forwards;
     }
   }
 }
