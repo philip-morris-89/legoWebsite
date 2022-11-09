@@ -1,40 +1,125 @@
-let data=[
+let apiDummy=[
+  [ //Random
     {
         link: "https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        name: "Atari 2600",
+        title: "Atari 2600",
         price: "239,99 €",
         details: "Novità",
         star: "4"
     },
     {
         link: "https://www.lego.com/cdn/cs/set/assets/blt36fb03cdeb25ad1a/10302.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        name: "Optimus Prime",
+        title: "Optimus Prime",
         price: "179,99 €",
         details: "Novità",
         star: "3"
     },
     {
         link: "https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        name: "Castello dei cavalieri del leone",
+        title: "Castello dei cavalieri del leone",
         price: "399,99 €",
         details: "Difficile da trovare",
         star: "3.5"
     },
     {
         link: "https://www.lego.com/cdn/cs/set/assets/blt15246c4306d1f236/76161.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        name: "Batwing",
+        title: "Batwing",
         price: "199,99 €",
         details: "Novità",
         star: "5"
     },
     {
         link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        name: "Calendario dell'avvento di Star Wars",
+        title: "Calendario dell'avvento di Star Wars",
         price: "34,99 €",
         details: "Esclusivo",
         star: "2"
     }
-]
+],[ //Marvel
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt094ad51f69e44f8f/76223.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    name: "Guanto dell'Infinito di Iron Man",
+    price: "69,99 €",
+    details: "Esclusivo",
+    star: "4.5"
+ },
+ {
+  link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Martello di Thor",
+  price: "119,99",
+  details: "Novità",
+  star: "4"
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Sancta Santorum",
+  price: "249,99",
+  details: "Esaurito",
+  star: "5"
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blte9c486327506d9fb/76210.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Hulkbuster",
+  price: "489,99",
+  details: "Novità",
+  star: ""
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Io Sono Groot",
+  price: "52,99",
+  details: "Novità",
+  star: "3.5"
+},
+],[ //StarWars
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    name: "Razor Crest",
+    price: "599,99",
+    details: "Difficile da trovare",
+    star: "5"
+ },
+ {
+  link: "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Millennium Falcon",
+  price: "899,99",
+  details: "Il più veloce",
+  star: "5"
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Imperial Star Destroyer",
+  price: "699,99",
+  details: "Presto fuori catalogo",
+  star: "5"
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Obi-Wan Kenobi e Darth Vader",
+  price: "19,99",
+  details: "Offerta",
+  star: "3"
+},
+{
+  link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+  name: "Calendario dell'Avvento Lego",
+  price: "39,99",
+  details: "Natale",
+  star: "4"
+},
+],[
+  
+]];
+
+// {
+//    link: "",
+//    name: "",
+//    price: "",
+//    details: "",
+//    star: ""
+// },
+
+let data = apiDummy[Math.floor(Math.random()*myArray.length)];
 
 function injectCard(){
   //cardPlace per individuare dove piazzare il contenuto
