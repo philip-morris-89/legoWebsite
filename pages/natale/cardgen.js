@@ -198,22 +198,26 @@ let apiDummy = [
 //   },
 // ],
 
-let data = apiDummy[Math.floor(Math.random() * 4)];
-let data2 = apiDummy[Math.floor(Math.random() * 4)];
-
-function injectCard(templateCard) {
+function injectCard(templateCard, selector) {
+  let data = apiDummy[Math.floor(Math.random() * 4)];
   //cardPlace per individuare dove piazzare il contenuto
-  const cardPlace1 = document.querySelector("#cardPlace1");
-  const cardPlace2 = document.querySelector("#cardPlace2")
+  const cardPlace1 = document.querySelector(`${selector}`);
+  
   //forEach cicla gli elementi creando una card per ogni object dell'array
   data.forEach((element) => {
     //in mezzo ai backtick `` va inserito l'HTML della card
+    let detail=''
+    if (element.details!==''){
+      detail=`<div class="productCard-badges">
+      <div class="productCard-badge"><span id="detail-span">${element.details}</span></div> 
+    </div>`
+    }
     cardPlace1.insertAdjacentHTML(
       "beforeend",
       `
         <li class="slider-li">
             <!--CARD INIZIO-->
-            <div class="productCard" data-card="template1" data-skeleton="false">
+            <div class="productCard" data-card="${templateCard}" data-skeleton="false">
               <div class="productCard-display">
                 <!-- Add To Wishlist Component  -->
                 <details class="addToWishlist">
@@ -253,9 +257,7 @@ function injectCard(templateCard) {
                   <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
                 </details>
                 <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span id="detail-span">${element.details}</span></div> 
-                </div>
+               ${detail}
                 <a class="productCard-imgContainer" href="">
                   <img
                     src="${element.link}"
@@ -366,7 +368,10 @@ function injectCard(templateCard) {
         `
     );
   });
-  
 }
 //listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
 document.addEventListener("load", injectCard());
+
+<script>
+  injectCard(template1,cardplaceX);
+</script>
