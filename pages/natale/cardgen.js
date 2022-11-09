@@ -192,7 +192,7 @@ let apiDummy = [
 //   },
 // ],
 
-function injectCard(templateCard, selector) {
+function injectCard(templateCard , selector) {
   let data = apiDummy[Math.floor(Math.random() * 4)];
   //cardPlace per individuare dove piazzare il contenuto
   const cardPlace = document.querySelector(`#${selector}`);
@@ -285,7 +285,8 @@ function injectCard(templateCard, selector) {
   });
 }
 //listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
-document.addEventListener("load", injectCard(template1,cardplace));
+document.addEventListener("load", injectCard("template1" , "cardplace")); //ESEMPIO PER SEZIONE BEST OF
 
 //GUIDA ALL'UTILIZZO
-//Richiamare la funzione e passarne i parametri -> injectCard(template1/2,"idDiAggancio")
+//Richiamare la funzione all'interno dell'html, inserire come primo parametro il template da utilizzare e come secondo parametro l'id della
+//posizione dove volete far comparire le card, I PARAMETRI VANNO INSERITI COME FOSSERO STRINGHE SENNO' DANNO ERRORE NON DEFINITO.
