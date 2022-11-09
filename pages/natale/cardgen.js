@@ -35,93 +35,92 @@ let apiDummy=[
         details: "Esclusivo",
         star: "2"
     }
-],[ //Marvel
+  ],[ //Marvel
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt094ad51f69e44f8f/76223.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Guanto dell'Infinito di Iron Man",
+      price: "69,99 €",
+      details: "Esclusivo",
+      star: "4.5"
+  },
   {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt094ad51f69e44f8f/76223.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    name: "Guanto dell'Infinito di Iron Man",
-    price: "69,99 €",
-    details: "Esclusivo",
-    star: "4.5"
- },
- {
-  link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Martello di Thor",
-  price: "119,99",
-  details: "Novità",
-  star: "4"
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Sancta Santorum",
-  price: "249,99",
-  details: "Esaurito",
-  star: "5"
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blte9c486327506d9fb/76210.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Hulkbuster",
-  price: "489,99",
-  details: "Novità",
-  star: ""
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Io Sono Groot",
-  price: "52,99",
-  details: "Novità",
-  star: "3.5"
-},
-],[ //StarWars
+    link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Martello di Thor",
+    price: "119,99",
+    details: "Novità",
+    star: "4"
+  },
   {
-    link: "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    name: "Razor Crest",
-    price: "599,99",
-    details: "Difficile da trovare",
+    link: "https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Sancta Santorum",
+    price: "249,99",
+    details: "Esaurito",
     star: "5"
- },
- {
-  link: "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Millennium Falcon",
-  price: "899,99",
-  details: "Il più veloce",
-  star: "5"
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Imperial Star Destroyer",
-  price: "699,99",
-  details: "Presto fuori catalogo",
-  star: "5"
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Obi-Wan Kenobi e Darth Vader",
-  price: "19,99",
-  details: "Offerta",
-  star: "3"
-},
-{
-  link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-  name: "Calendario dell'Avvento Lego",
-  price: "39,99",
-  details: "Natale",
-  star: "4"
-},
-],[
-  
-]];
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blte9c486327506d9fb/76210.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Hulkbuster",
+    price: "489,99",
+    details: "Novità",
+    star: ""
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Io Sono Groot",
+    price: "52,99",
+    details: "Novità",
+    star: "3.5"
+  },
+  ],[ //StarWars
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Razor Crest",
+      price: "599,99",
+      details: "Difficile da trovare",
+      star: "5"
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Millennium Falcon",
+    price: "899,99",
+    details: "Il più veloce",
+    star: "5"
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Imperial Star Destroyer",
+    price: "699,99",
+    details: "Presto fuori catalogo",
+    star: "5"
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Obi-Wan Kenobi e Darth Vader",
+    price: "19,99",
+    details: "Offerta",
+    star: "3"
+  },
+  {
+    link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+    title: "Calendario dell'Avvento Lego",
+    price: "39,99",
+    details: "Natale",
+    star: "4"
+  },
+  ]
+];
 
 // {
 //    link: "",
-//    name: "",
+//    title: "",
 //    price: "",
 //    details: "",
 //    star: ""
 // },
 
-let data = apiDummy[Math.floor(Math.random()*myArray.length)];
+let data = apiDummy[Math.floor(Math.random()*3)];
 
-function injectCard(){
+function injectCard(templateCard){
   //cardPlace per individuare dove piazzare il contenuto
     const cardPlace = document.querySelector("#cardPlace");
     console.log(cardPlace);
@@ -131,7 +130,7 @@ function injectCard(){
         cardPlace.insertAdjacentHTML("beforeend",`
         <li class="slider-li">
             <!--CARD INIZIO-->
-            <div class="productCard" data-card="template1" data-skeleton="false">
+            <div class="productCard" data-card="${templateCard}" data-skeleton="false">
               <div class="productCard-display">
                 <!-- Add To Wishlist Component  -->
                 <details class="addToWishlist">
@@ -181,7 +180,7 @@ function injectCard(){
                 </a>
               </div>
               <div class="productCard-content">
-                <a href="" class="productCard-title">${element.name}</a>
+                <a href="" class="productCard-title">${element.title}</a>
                 <div class="productCard-ratings">
                   <!-- Component Star Ratings -->
                   <div class="starRatings" data-rating="star-${element.star}">
