@@ -1,113 +1,155 @@
-let apiDummy=[
-  [ //Random
+let apiDummy = [
+  [
+    //Random
     {
-        link: "https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        title: "Atari 2600",
-        price: "239,99 €",
-        details: "Novità",
-        star: "4"
+      link: "https://www.lego.com/cdn/cs/set/assets/blt10c72e2ab2785ea4/10306.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Atari 2600",
+      price: "239,99 €",
+      details: "Novità",
+      star: "4",
     },
     {
-        link: "https://www.lego.com/cdn/cs/set/assets/blt36fb03cdeb25ad1a/10302.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        title: "Optimus Prime",
-        price: "179,99 €",
-        details: "Novità",
-        star: "3"
+      link: "https://www.lego.com/cdn/cs/set/assets/blt36fb03cdeb25ad1a/10302.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Optimus Prime",
+      price: "179,99 €",
+      details: "Novità",
+      star: "3",
     },
     {
-        link: "https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        title: "Castello dei cavalieri del leone",
-        price: "399,99 €",
-        details: "Difficile da trovare",
-        star: "3.5"
+      link: "https://www.lego.com/cdn/cs/set/assets/blt0254ea3dce736ea0/10305.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Castello dei cavalieri del leone",
+      price: "399,99 €",
+      details: "Difficile da trovare",
+      star: "3.5",
     },
     {
-        link: "https://www.lego.com/cdn/cs/set/assets/blt15246c4306d1f236/76161.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        title: "Batwing",
-        price: "199,99 €",
-        details: "Novità",
-        star: "5"
+      link: "https://www.lego.com/cdn/cs/set/assets/blt15246c4306d1f236/76161.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Batwing",
+      price: "199,99 €",
+      details: "Novità",
+      star: "5",
     },
     {
-        link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-        title: "Calendario dell'avvento di Star Wars",
-        price: "34,99 €",
-        details: "Esclusivo",
-        star: "2"
-    }
-  ],[ //Marvel
+      link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Calendario dell'avvento di Star Wars",
+      price: "34,99 €",
+      details: "Esclusivo",
+      star: "2",
+    },
+  ],
+  [
+    //Marvel
     {
       link: "https://www.lego.com/cdn/cs/set/assets/blt094ad51f69e44f8f/76223.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
       title: "Guanto dell'Infinito di Iron Man",
       price: "69,99 €",
       details: "Esclusivo",
-      star: "4.5"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Martello di Thor",
-    price: "119,99",
-    details: "Novità",
-    star: "4"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Sancta Santorum",
-    price: "249,99",
-    details: "Esaurito",
-    star: "5"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blte9c486327506d9fb/76210.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Hulkbuster",
-    price: "489,99",
-    details: "Novità",
-    star: ""
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Io Sono Groot",
-    price: "52,99",
-    details: "Novità",
-    star: "3.5"
-  },
-  ],[ //StarWars
+      star: "4.5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Martello di Thor",
+      price: "119,99",
+      details: "Novità",
+      star: "4",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt5157080434f0c032/76218.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Sancta Santorum",
+      price: "249,99",
+      details: "Esaurito",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blte9c486327506d9fb/76210.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Hulkbuster",
+      price: "489,99",
+      details: "Novità",
+      star: "",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Io Sono Groot",
+      price: "52,99",
+      details: "Novità",
+      star: "3.5",
+    },
+  ],
+  [
+    //StarWars
     {
       link: "https://www.lego.com/cdn/cs/set/assets/bltdbe9230cce3804cf/75331.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
       title: "Razor Crest",
       price: "599,99",
       details: "Difficile da trovare",
-      star: "5"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Millennium Falcon",
-    price: "899,99",
-    details: "Il più veloce",
-    star: "5"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Imperial Star Destroyer",
-    price: "699,99",
-    details: "Presto fuori catalogo",
-    star: "5"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Obi-Wan Kenobi e Darth Vader",
-    price: "19,99",
-    details: "Offerta",
-    star: "3"
-  },
-  {
-    link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
-    title: "Calendario dell'Avvento Lego",
-    price: "39,99",
-    details: "Natale",
-    star: "4"
-  },
-  ]
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt95c35d4ed5665a49/75192.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Millennium Falcon",
+      price: "899,99",
+      details: "Il più veloce",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Imperial Star Destroyer",
+      price: "699,99",
+      details: "Presto fuori catalogo",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt4be686c9aaced5fa/40547.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Obi-Wan Kenobi e Darth Vader",
+      price: "19,99",
+      details: "Offerta",
+      star: "3",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt6007d8f29092bb5f/75340_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Calendario dell'Avvento Lego",
+      price: "39,99",
+      details: "Natale",
+      star: "4",
+    },
+  ],
+  [ //Lego Friends
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blte5547c193bd2c990/41706_alt1.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Calendario dell'avvento dei Friends",
+      price: "69,99",
+      details: "Esclusivo",
+      star: "4",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltb0603f643af7337b/41718.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Centro Day-Care dei Cuccioli",
+      price: "49,99",
+      details: "Nuovo",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt39b342c5659c16cc/41712.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Camion riciclaggio rifiuti",
+      price: "49,99",
+      details: "Difficile da trovare",
+      star: "4",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blteec7162a55c6ce6c/5007274.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Lunch set Friends",
+      price: "21,99",
+      details: "Nuovo",
+      star: "3",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt8db5b8f3cbbaaf53/41709.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Casa delle vacanze sulla spiaggia",
+      price: "179,99",
+      details: "Difficile da trovare",
+      star: "5",
+    },
+  ],
 ];
 
 // {
@@ -118,16 +160,56 @@ let apiDummy=[
 //    star: ""
 // },
 
-let data = apiDummy[Math.floor(Math.random()*3)];
+// [
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+// ],
 
-function injectCard(templateCard){
+let data = apiDummy[Math.floor(Math.random() * 4)];
+
+function injectCard(templateCard) {
   //cardPlace per individuare dove piazzare il contenuto
-    const cardPlace = document.querySelector("#cardPlace");
-    console.log(cardPlace);
-    //forEach cicla gli elementi creando una card per ogni object dell'array
-    data.forEach(element => {
-      //in mezzo ai backtick `` va inserito l'HTML della card
-        cardPlace.insertAdjacentHTML("beforeend",`
+  const cardPlace = document.querySelector("#cardPlace");
+  console.log(cardPlace);
+  //forEach cicla gli elementi creando una card per ogni object dell'array
+  data.forEach((element) => {
+    //in mezzo ai backtick `` va inserito l'HTML della card
+    cardPlace.insertAdjacentHTML(
+      "beforeend",
+      `
         <li class="slider-li">
             <!--CARD INIZIO-->
             <div class="productCard" data-card="${templateCard}" data-skeleton="false">
@@ -200,10 +282,9 @@ function injectCard(templateCard){
               </div>
             </div><!-- Product Card -->
           </li>
-        `);
-    });
-
+        `
+    );
+  });
 }
 //listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
-document.addEventListener("load",injectCard());
-
+document.addEventListener("load", injectCard());
