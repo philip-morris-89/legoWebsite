@@ -73,13 +73,14 @@ let themeCall = [
 // },
 
 function injectTheme(){
-  let data = themeCall;
-  const themePlace = document.querySelector(`#themePlace`);
-  data.forEach((element)) => {
-    cardPlace.insertAdjacentHTML("beforeend",
+  let theme = themeCall;
+  const placeSelector = document.querySelectorAll("#themeplace");
+  theme.forEach((element) => {
+    placeSelector.insertAdjacentHTML("beforeend", 
     `
-    INSERIRE QUI HTML
-    `
-  )
-  };
+    PROVA PROVA PROVA
+    `)  
+  });
 };
+
+document.addEventListener("load", injectTheme);
