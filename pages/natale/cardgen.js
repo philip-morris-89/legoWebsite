@@ -470,7 +470,7 @@ let apiDummy = [
 // ],
 
 function injectCard(templateCard, selector) {
-  let data = apiDummy[Math.floor(Math.random() * 4)];
+  let data = apiDummy[Math.floor(Math.random() * 6)];
   //cardPlace per individuare dove piazzare il contenuto
   const cardPlace = document.querySelector(`#${selector}`);
   console.log(cardPlace);
