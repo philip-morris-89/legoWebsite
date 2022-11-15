@@ -36,6 +36,34 @@ let apiDummy = [
       details: "Esclusivo",
       star: "2",
     },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltc6d87e5e7bacb3ae/21333.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Vincent Van Gogh - Notte Stellata",
+      price: "169,99",
+      details: "Difficile da trovare",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltd6f8047eaa1d3a3a/76206.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Personaggio di Iron Man",
+      price: "39,99",
+      details: "Nuovo",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt497da03153fb9a10/21319.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Central Perk",
+      price: "<p><s>199,99</s> 129,99</p>",
+      details: "",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt0e81d1708c094553/10303.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Montagne Russe",
+      price: "209,99",
+      details: "Nuovo",
+      star: "4",
+    },
   ],
   [
     //Marvel
@@ -49,7 +77,7 @@ let apiDummy = [
     {
       link: "https://www.lego.com/cdn/cs/set/assets/bltd22f99034387c7ac/76209.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
       title: "Martello di Thor",
-      price: "119,99",
+      price: "<p><s>199,99</s> 129,99</p>",
       details: "Novità",
       star: "4",
     },
@@ -65,7 +93,7 @@ let apiDummy = [
       title: "Hulkbuster",
       price: "489,99",
       details: "Novità",
-      star: "",
+      star: "5",
     },
     {
       link: "https://www.lego.com/cdn/cs/set/assets/blt786d9a5e1bafd414/76217.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
@@ -73,6 +101,34 @@ let apiDummy = [
       price: "52,99",
       details: "",
       star: "3.5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt149a36e6328fd9a8/76178.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Daily Bugle",
+      price: "<p><s>199,99</s> 129,99</p>",
+      details: "Ultimi pezzi",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltdaa3c3d3679b4432/31199.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Iron Man - Marvel Studios",
+      price: "99,99",
+      details: "In esaurimento",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt6c32537ba11c66d2/76193.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "L'astronave dei Guardiani",
+      price: "159,99",
+      details: "Esclusivo",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blta53bcc3e1e940e0e/76187.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Venom",
+      price: "39,99",
+      details: "",
+      star: "4.5",
     },
   ],
   [
@@ -112,6 +168,34 @@ let apiDummy = [
       details: "",
       star: "4",
     },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltf829afe15b940424/75323.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "The Justifier",
+      price: "179,99",
+      details: "Difficile da trovare",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt5da3d614bc21e724/5007464.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Pupazzo natalizio di Chewbacca",
+      price: "49,99",
+      details: "Novità",
+      star: "4.5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt09c9288d840d7a7c/40391.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Stormtrooper - Lego Bricks",
+      price: "<p><s>39,99</s> 17,99</p>",
+      details: "",
+      star: "",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt7dc15f12b7f8c85f/75288.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "At-At",
+      price: "<p><s>239,99</s> 117,99</p>",
+      details: "In offerta",
+      star: "5",
+    },
   ],
   [
     //Lego Friends
@@ -150,16 +234,174 @@ let apiDummy = [
       details: "Difficile da trovare",
       star: "5",
     },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltafb97dd45d3a8d68/41711_WEB_PRI_NOBG.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "La scuola d'arte di Emma",
+      price: "<p><s>139,99</s> 77,99</p>",
+      details: "In Offerta",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt21da751a48ad5d71/41702.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Casa Galleggiante",
+      price: "120,99",
+      details: "",
+      star: "4.5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltd8313d0d6209857c/41716.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Avventura in Barca a Vela",
+      price: "79,99",
+      details: "Novità",
+      star: "3",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt5f505a956ed4efb2/41684.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Grand Hotel - City",
+      price: "189,99",
+      details: "",
+      star: "2.5",
+    },
+  ],
+  [ //Random 2
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt62f99776b13a8e94/10297.png?fit=bounds&format=png&width=320&height=320&dpr=3",
+      title: "Boutique",
+      price: "169,99",
+      details: "Difficile da trovare",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt1cedf079c8ffbe5e/42130_Prod.png?fit=bounds&format=png&width=320&height=320&dpr=3",
+      title: "BMW M1000",
+      price: "79,99",
+      details: "",
+      star: "4",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt6e4605758d75ce41/31203.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3",
+      title: "Mappa del Mondo",
+      price: "169,99",
+      details: "Difficile da trovare",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=2",
+      title: "Batmobile di Batman",
+      price: "159,99",
+      details: "Il più forte",
+      star: "3",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt505d24ad41366851/21327.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3",
+      title: "Macchina da Scrivere",
+      price: "299,99",
+      details: "Idea regalo",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt9ecbcfc462381676/71040.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "Il castello Disney",
+      price: "399,99",
+      details: "",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt8a090b8576daf164/10280.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3",
+      title: "Bouquet di fiori",
+      price: "79,99",
+      details: "",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt00ba54004c17e820/10283.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3",
+      title: "Nasa Space Shuttle Discovery",
+      price: "169,99",
+      details: "Esaurito",
+      star: "3.5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt6e02eacd8f3ffb9c/10270.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3",
+      title: "Libreria",
+      price: "179,99",
+      details: "Difficile da trovare",
+      star: "3.5",
+    },
+  ],
+  [ // Nasa
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt3dddc992e5559ddf/21309.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "Saturn V Apollo LEGO® NASA",
+      price: "199,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt3777f348d7f98b8d/21321.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "Stazione Spaziale Internazionale",
+      price: "159,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt00ba54004c17e820/10283.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "NASA Space Shuttle Discovery",
+      price: "59,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt5e2703640ec85d2a/10266.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "NASA Apollo 11 Lunar Lander",
+      price: "129,99",
+      details: "Novità",
+      star: "4",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt15246c4306d1f236/76161.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "1989 - Batwing",
+      price: "89,99",
+      details: "Il più forte",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blte23f89423d92139d/60350.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Base di ricerca Lunare",
+      price: "89,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt4e760d8c14f0cbbe/60351.png?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Centro spaziale",
+      price: "59,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/bltd53e79fa7920da2d/75547.jpg?fit=bounds&format=webply&quality=80&width=320&height=320&dpr=1.5",
+      title: "Shuttle dei Minion",
+      price: "189,99",
+      details: "Novità",
+      star: "5",
+    },
+    {
+      link: "https://www.lego.com/cdn/cs/set/assets/blt3dddc992e5559ddf/21309.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1",
+      title: "Saturn V Apollo LEGO® NASA",
+      price: "199,99",
+      details: "Novità",
+      star: "5",
+    },
   ],
 ];
 
-// {
-//    link: "",
-//    title: "",
-//    price: "",
-//    details: "",
-//    star: ""
-// },
+//  {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: ""
+//  },
 
 // [
 //   {
@@ -190,13 +432,48 @@ let apiDummy = [
 //     details: "",
 //     star: "",
 //   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
+//   {
+//     link: "",
+//     title: "",
+//     price: "",
+//     details: "",
+//     star: "",
+//   },
 // ],
 
-function injectCard(templateCard , selector) {
-  let data = apiDummy[Math.floor(Math.random() * 4)];
+function injectCard(templateCard, selector) {
+  let data = apiDummy[Math.floor(Math.random() * 6)];
   //cardPlace per individuare dove piazzare il contenuto
   const cardPlace = document.querySelector(`#${selector}`);
-  console.log(cardPlace)
+  console.log(cardPlace);
   //forEach cicla gli elementi creando una card per ogni object dell'array
   data.forEach((element) => {
     //la porzione di if di detail permette la comparsa del riquadro detail sono se il prodotto ha un badge
@@ -285,7 +562,10 @@ function injectCard(templateCard , selector) {
   });
 }
 //listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
-document.addEventListener("load", injectCard("template1" , "cardplace")); //ESEMPIO PER SEZIONE BEST OF
+document.addEventListener("load", injectCard("template1", "cardplace")); //ESEMPIO PER SEZIONE BEST OF
+document.addEventListener("load", injectCard("template2", "cardplacePopolari"));
+document.addEventListener("load", injectCard("template2", "cardplaceScopri"));
+document.addEventListener("load", injectCard("template1", "cardplaceConsigliati"));
 
 //GUIDA ALL'UTILIZZO
 //Richiamare la funzione all'interno dell'html, inserire come primo parametro il template da utilizzare e come secondo parametro l'id della
