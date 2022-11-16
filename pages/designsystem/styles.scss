@@ -1,9 +1,13 @@
 @import '../../main.scss';
 @import '../../components/colorSwatch/colorSwatch.scss';
-@import '../../components/starRating/starRating.scss';
+@import '../../blocks/starRatings/starRatings.scss';
 @import '../../components/inputEmailSubscription/inputEmailSubscription.scss';
-@import '../../components/button-aggiungi al carrello/button-ag.scss';
-@import '../../components/Bottone\ W-B/bottonewb-style.scss';
+@import '../../blocks/buttonATC/buttonATC.scss';
+@import '../../blocks/buttonPrimary/buttonPrimary.scss';
+@import '../../templates/productCard/productCard.scss';
+@import '../../templates/articleCard/articleCard.scss';
+@import '../../templates/banners/banners.scss';
+
 
 $aside-width-size: 20%;
 
