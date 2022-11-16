@@ -1,464 +1,227 @@
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>Empty Template</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" type="text/css">
-  <title>Empty Template</title>
-</head>
-
-<body>
-
-  <!-- ************************************************************************** Navbar -->
-  <nav class="navBar">
-    <div class="navBar-row1">
-      <ul class="navBar-row1-col1">
-        <li>Link</li><!-- Area giochi -->
-      </ul>
-      <ul class="navBar-row1-col2">
-        <li>
-          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-          </svg>
-        </li>
-        <li>
-          <p>Omaggio con gli acquisti LEGO® superiori a 90 €* <a href="">Compra ora</a></p>
-        </li>
-        <li>
-          <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-            <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-          </svg>
-        </li>
-      </ul>
-      <ul class="navBar-row1-col3">
-        <li>Li 1</li><!-- Profile/Avatar -->
-        <li>Li 2</li><!-- VIP -->
-      </ul>
-    </div>
-    <div class="navBar-row2">
-      <ul class="navBar-row2-col1">
-        <li>Menu</li><!-- Hamburger Menu -->
-        <li class="navBarLogo">
-          <img src="../../assets/images/logo.svg" alt="Logo">
-        </li><!-- Lego logo -->
-      </ul>
-      <div class="navBar-row2-col2">
-        <ul class="navBar-menu">
-          <li class="navBar-menuItem">
-            <a data-tab="acquista" href="#">Acquista</a>
-          </li>
-          <li class="navBar-menuItem">
-            <a data-tab="scopri" href="#">Scopri</a>
-          </li>
-          <li class="navBar-menuItem">
-            <a data-tab="aiuto" href="#">Aiuto</a>
-          </li>
-          <li class="navBar-menuItem">
-            <a class="navBarButton" href="">Natale</a>
-          </li>
-        </ul>
-
-        <!-- Acquista -->
-        <div id="acquista" class="navBar-subMenu-container">
-          <!-- ################################################### Sub menu left -->
-          <ul class="navBar-subMenu-left">
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="setPerTema" href="#">
-                <span>Set per tema</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
+  <body>
+    <!-- Navbar--------------------------------------------------- -->
+    <nav class="navbar navbar-expand-lg fixed-top bg-white ms-4">
+      <div class="container-fluid mx-5">
+        <a class="navbar-brand ms-5" href="#"
+          ><img
+            src="../../assets/images/svg-gobbler.png"
+            alt=""
+            width="200px"
+            height="50px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse mx-auto"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link link-dark lead" href="#"
+                ><p>PIANI DI LEZIONE</p></a
+              >
             </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="eta" href="#">
-                <span>Età</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
+            <li class="nav-item me-5">
+              <a class="nav-link me-4" href="#">
+                <img
+                  src="https://education.lego.com/v3/assets/blt293eea581807678a/bltd78d1d042b975752/5eba75830538f630430ad97f/13.png"
+                  alt=""
+                  width="25px"
+                  height="20px"
+              /></a>
             </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="prezzi" href="#">
-                <span>Prezzi</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="merchandising" href="#">
-                <span>Merchandising LEGO</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="interessi" href="#">
-                <span>Interessi</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="pick" href="#">
-                <span>Pick and Build</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li><a href="">Set Esclusivi</a></li>
-            <li><a href="">Novità</a></li>
-            <li><a href="">I più venduti</a></li>
-            <li><a href="">Home decor</a></li>
-            <li><a href="">Sconti e offerte</a></li>
-            <li><a href="">Disponibile a breve</a></li>
-            <li><a href="">Ultima occasione per acquistarli</a></li>
-          </ul>
-
-          <!-- ################################################### Sub menu right -->
-
-          <!-- Set Per tema -->
-          <ul class="navBar-subMenu-right" id="setPerTema">
-            <li><a href="">Visualizza tutti i temi</a></li>
-            <li><a href="">Architecture</a></li>
-            <li><a href="">Batman™</a></li>
-            <li><a href="">BOOST</a></li>
-            <li><a href="">BrickHeadz</a></li>
-            <li><a href="">Brick Sketches™</a></li>
-            <li><a href="">Classic</a></li>
-            <li><a href="">Creator 3-in-1</a></li>
-            <li><a href="">Creator Expert</a></li>
-            <li><a href="">DC</a></li>
-            <li><a href="">Disney™</a></li>
-            <li><a href="">Topolino e amici Disney</a></li>
-            <li><a href="">Lightyear di Disney e Pixar</a></li>
-          </ul>
-          
-          <!-- Età -->
-          <ul class="navBar-subMenu-right" id="eta">
-            <li><a href="">Visualizza tutte le età</a></li>
-            <li><a href="">1.5+</a></li>
-            <li><a href="">4+</a></li>
-            <li><a href="">6+</a></li>
-            <li><a href="">9+</a></li>
-            <li><a href="">13+</a></li>
-            <li><a href="">18+</a></li>
-          </ul>
-
-          <!-- Prezzi -->
-          <ul class="navBar-subMenu-right" id="prezzi">
-            <li><a href="">Visualizza tutti i prezzi</a></li>
-            <li><a href="">Meno di 20 €</a></li>
-            <li><a href="">20 € - 50 €</a></li>
-            <li><a href="">50 € - 100 €</a></li>
-            <li><a href="">100 € - 200 €</a></li>
-            <li><a href="">Più di 200 €</a></li>
-          </ul>
-
-          <!-- Merchandising LEGO -->
-          <ul class="navBar-subMenu-right" id="merchandising">
-            <li><a href="">VISUALIZZA TUTTO IL MERCHANDISING LEGO</a></li>
-            <li><a href="">Accessori</a></li>
-            <li><a href="">Zaini e portavivande</a></li>
-            <li><a href="">Libri</a></li>
-            <li><a href="">Portachiavi</a></li>
-            <li><a href="">Giocattoli di peluche</a></li>
-            <li><a href="">Bustina</a></li>
-            <li><a href="">Puzzle e giochi da tavolo</a></li>
-            <li><a href="">Gioco di ruolo e costumi</a></li>
-            <li><a href="">Cancelleria</a></li>
-            <li><a href="">Contenitori</a></li>
-          </ul>
-
-          <!-- Interessi -->
-          <ul class="navBar-subMenu-right" id="interessi">
-            <li><a href="">VISUALIZZA TUTTI GLI INTERESSI</a></li>
-            <li><a href="">Per gli adulti</a></li>
-            <li><a href="">Animali</a></li>
-            <li><a href="">Arts and Crafts</a></li>
-            <li><a href="">Edifici</a></li>
-            <li><a href="">Auto</a></li>
-            <li><a href="">Programmazione per i bambini</a></li>
-            <li><a href="">Draghi</a></li>
-            <li><a href="">Fantasy</a></li>
-            <li><a href="">Film</a></li>
-            <li><a href="">Gaming</a></li>
-            <li><a href="">Impara a costruire</a></li>
-            <li><a href="">Musica</a></li>
-          </ul>
-
-          <!-- PICK AND BUILD -->
-          <ul class="navBar-subMenu-right" id="pick">
-            <li><a href="">PICK AND BUILD</a></li>
-            <li><a href="">Pick a Brick</a></li>
-            <li><a href="">Kit e accessori per mattoncini</a></li>
-            <li><a href="">Build a Minifigure</a></li>
-          </ul>
-        </div>
-
-        <!-- Scopri -->
-        <div id="scopri" class="navBar-subMenu-container">
-          <!-- ################################################### Sub menu left -->
-          <ul class="navBar-subMenu-left">
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="valori" href="#">
-                <span>I nostri valori</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="app" href="#">
-                <span>Le nostre app</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li>
-              <a class="navBar-subMenu-linkExpand" data-subtab="riviste" href="#">
-                <span>Le nostre riviste</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
-              </a>
-            </li>
-            <li><a href="">Tutti i temi LEGO</a></li>
-            <li><a href="">Tutti gli interessi LEGO</a></li>
-            <li><a href="">LEGO® CON</a></li>
-            <li><a href="">Per gli adulti</a></li>
-            <li><a href="">Rebuild the World</a></li>
-            <li><a href="">Programma premi VIP</a></li>
-            <li><a href="">Decorator 3D DOTS</a></li>
-            <li><a href="">LEGO® Mosaic Maker</a></li>
-            <li><a href="">90 anni di gioco</a></li>
-          </ul>
-
-          <!-- ################################################### Sub menu right -->
-
-          <!-- I nostri valori -->
-          <ul class="navBar-subMenu-right" id="valori">
-            <li><a href="">Informazioni su LEGO Group</a></li>
-            <li><a href="">Notizie LEGO</a></li>
-            <li><a href="">Sostenibilità</a></li>
-          </ul>
-          
-          <!-- Le nostre app -->
-          <ul class="navBar-subMenu-right" id="app">
-            <li><a href="">LEGO Builder</a></li>
-            <li><a href="">App LEGO Life</a></li>
-          </ul>
-
-          <!-- Le nostre riviste -->
-          <ul class="navBar-subMenu-right" id="riviste">
-            <li><a href="">Cataloghi LEGO</a></li>
-          </ul>
-        </div>
-
-        <!-- Aiuto -->
-        <div id="aiuto" class="navBar-subMenu-container">
-          <!-- ################################################### Sub menu left -->
-          <ul class="navBar-subMenu-left">
-            <li><a href="">Verifica stato ordine</a></li>
-            <li><a href="">Consegne e resi</a></li>
-            <li><a href="">Trova uno Store</a></li>
-            <li><a href="">Istruzioni per la costruzione</a></li>
-            <li><a href="">Domande frequenti</a></li>
-            <li><a href="">Contattaci</a></li>
-            <li><a href="">Pezzi di ricambio</a></li>
           </ul>
         </div>
       </div>
-
-      <div class="sideBar">
-        <a class="sideBarClose">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 fgDCVZ"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg>
-        </a>
+    </nav>
+    <!-- end navbar -------------------------------->
+    <!-- big Container ----------------------------->
+    <div class="container-fluid">
+      <div class="row my-5 justify-content-center">
+        <div id="main_card" class="col-12 col-md-5 order-sm-2 order-md-2">
+          <div>
+            <img
+              src="https://education.lego.com/v3/assets/blt293eea581807678a/blt393b7ca2feefb0c1/60d2cd32ae0d50495b4f911f/LLS_ModDetail_04.png?auto=webp&format=png&width=900&quality=90&fit=bounds"
+              class="img-fluid"
+              alt="Responsive image"
+            />
+          </div>
+        </div>
+        <div class="col-12 col-md-5 order-sm-1 order-md-1 order-lg-1">
+          <div>
+            <h1><br />Il sistema di <br />apprendimento LEGO®</h1>
+            <p class="text-justify text-start">
+              Ripensa l'apprendimento STEAM e scatena la gioia in classe con il
+              sistema di apprendimento LEGO® , un sistema di apprendimento
+              pratico, intuitivo, inclusivo e altamente adattabile. <br />
+              Aiuta gli alunni ad acquisire competenze utili per il futuro e
+              accresci la loro fiducia in se stessi, offrendo alla classe
+              infinite possibilità di apprendimento pratiche e divertenti delle
+              materie STEAM. <br />
+              LEGO® Education SPIKE™ Principale stimola negli alunni della
+              scuola primaria l’interesse per l’apprendimento delle materie
+              STEAM attraverso il gioco, la risoluzione dei problemi e la
+              narrazione, preparandoli a sviluppare una mentalità resiliente e
+              indipendente.
+            </p>
+          </div>
+          <div class="text-start">
+            <button type="button" class="btn btn-link">
+              <img
+                id="svg_icons"
+                src="https://img.icons8.com/color/48/000000/forward.png"
+              />
+              <a href="#">Ulteriori informazioni</a>
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="navBarOverlay closeSideBar"></div>
 
-      <ul class="navBar-row2-col3">
-        <li>Li 1</li><!-- Search icon -->
-        <li>Li 2</li><!-- Avatar/Profile -->
-        <li>Li 3</li><!-- Heart icon -->
-        <li>Li 4</li><!-- Shopping icon -->
-      </ul>
-    </div>
-  </nav>
+      <!-- end big Container -------------------------------------------------------------->
 
-  <section class="sectionTitle">
-    <!-- Component Page Header -->
-    <header class="pageHeader" data-position="left" data-size="small">
-      <div data-container="large">
-        <h1>Section title</h1>
-      </div>
-    </header>
-  </section>
+      <div id="second_card" class="container-fluid">
+        <div id="second" class="row my-4 justify-content-center">
+          <div class="col-12 col-md-5 text-center p-5 me-2">
+            <h2>Trova un Distributore <br />Locale</h2>
 
-  <section>
-    <div data-container="large">
-      <!-- Code here -->
-    </div>
-  </section>
-
-  <footer class="footer" data-skeleton="false">
-    <div data-container="large">
-      <section class="footer-aside-siteMap">
-        <aside class="footer-aside">
-          <header class="footer-aside-header">
-            <div class="footer-aside-header-item">
-              <img src="../../assets/images/logo.svg" alt="Image of Logo">
+            <div class="text-center">
+              <button type="button" class="btn btn-link">
+                <img
+                  id="svg_icons"
+                  src="https://img.icons8.com/color/48/000000/forward.png"
+                />
+                <a href="#">SITO WAB LOCALE(INGLESE)</a>
+              </button>
             </div>
-            <div class="footer-aside-header-item">Paese</div>
-          </header>
-          <div class="footer-aside-link">
-            <a href="" class="footer-link">Link</a>
+            <img
+              src="https://education.lego.com/v3/assets/blt293eea581807678a/bltf591d7884eeb37fd/61816145dfb1f576f886e49f/Find_distributor.png?auto=webp&format=png&width=1200&quality=90&fit=bounds"
+              class="img-fluid"
+              alt="Responsive image"
+            />
           </div>
-          <div class="footer-marketing">
-            <h6 class="footer-h6">Email marketing title</h6>
-            <div class="footer-marketing-email">Input field</div>
+          <div class="col-12 col-md-5 text-center p-5 ms-2">
+            <h2>Piani di Lezione</h2>
+            <div class="text-center">
+              <button type="button" class="btn btn-link">
+                <img
+                  id="svg_icons"
+                  src="https://img.icons8.com/color/48/000000/forward.png"
+                />
+                <a href="#">SITO WAB LOCALE(INGLESE)</a>
+              </button>
+            </div>
+
+            <img
+              src="https://education.lego.com/v3/assets/blt293eea581807678a/blt0b53ae2f346c9faa/618161467a41520f2aabcb38/Lesson_plans.png?auto=webp&format=png&width=1200&quality=90&fit=bounds"
+              class="img-fluid"
+              alt="Responsive image"
+            />
           </div>
-        </aside>
-        <ul class="footer-siteMap-ul">
-          <li class="footer-siteMap-li">
-            <details open>
-              <summary>
-                <h6 class="footer-h6">Chi siamo</h6>
-                <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </summary>
-              <ul>
-                <li>
-                  <a href="" class="footer-link">Informazioni su LEGO Group</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Sala stampa LEGO®</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Sostenibilità</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Dichiarazione sulla trasparenza della catena di fornitura</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Certificazioni dei prodotti LEGO</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Carriere LEGO</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Segnalazioni sulla conformità LEGO</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="footer-siteMap-li">
-            <details open>
-              <summary>
-                <h6 class="footer-h6">Supporto</h6>
-                <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </summary>
-              <ul>
-                <li>
-                  <a href="" class="footer-link">Contattaci</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Istruzioni</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Parti mancanti</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Spedizione e resi</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Modalità di pagamento</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Termini e condizioni</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Richiamo prodotti</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="footer-siteMap-li">
-            <details open>
-              <summary>
-                <h6 class="footer-h6">ATTRAZIONI</h6>
-                <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </summary>
-              <ul>
-                <li>
-                  <a href="" class="footer-link">LEGO® House</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">LEGOLAND® Parks</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">LEGOLAND Discovery Center</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="footer-siteMap-li">
-            <details open>
-              <summary>
-                <h6 class="footer-h6">ALTRE INFORMAZIONI</h6>
-                <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                </svg>
-              </summary>
-              <ul>
-                <li>
-                  <a href="" class="footer-link">LEGO® LIFE</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">LEGO Education</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">LEGO Ideas</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">LEGO Foundation</a>
-                </li>
-                <li>
-                  <a href="" class="footer-link">Programma di affiliazione</a>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-social-marketing">
-        <div class="footer-marketing">
-          <h6 class="footer-h6">Email marketing title</h6>
-          <div class="footer-marketing-email">Input field</div>
         </div>
-        <div class="footer-social">
-          <h6 class="footer-h6">Social media title</h6>
-          <ul class="footer-social-links">
-            <li><a href="">Sm 1</a></li>
-            <li><a href="">Sm 2</a></li>
-            <li><a href="">Sm 3</a></li>
-            <li><a href="">Sm 4</a></li>
-          </ul>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 col-md-5 text-center p-5 me-2">
+            <h2>App LEGO® Education SPIKE™</h2>
+            <div class="text-center">
+              <button type="button" class="btn btn-link">
+                <img
+                  id="svg_icons"
+                  src="https://img.icons8.com/color/48/000000/forward.png"
+                />
+                <a href="#">SITO WAB LOCALE(INGLESE)</a>
+              </button>
+            </div>
+            <img
+              src="https://education.lego.com/v3/assets/blt293eea581807678a/blt612150f801cba72b/6181614c6f9d926e2aceb291/Downloads.png?auto=webp&format=png&width=1200&quality=90&fit=bounds"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="col-12 col-md-5 p-5 ms-2">
+            <div class="text-center">
+              <h2>Assistenza</h2>
+              <button type="button" class="btn btn-link">
+                <img
+                  id="svg_icons"
+                  src="https://img.icons8.com/color/48/000000/forward.png"
+                />
+                <a href="#">SITO WAB LOCALE(INGLESE)</a>
+              </button>
+              <img
+                src="https://education.lego.com/v3/assets/blt293eea581807678a/blt111394bf566b6540/61816148166cf50e4a5c6d7e/Support.png?auto=webp&format=png&width=400&quality=90&fit=bounds"
+                width="70%"
+                height="70%"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
         </div>
-      </section>
-      <section class="footer-privacy-copyright">
-        <div class="footer-privacy">
-          <a href="">Link 1</a>
-          <a href="">Link 2</a>
-          <a href="">Link 3</a>
-          <a href="">Link 4</a>
-          <a href="">Link 5</a>
-          <a href="">Link 6</a>
-          <a href="">Link 7</a>
-        </div>
-        <div class="footer-copyright">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, architecto cumque voluptate facilis
-            cupiditate mollitia assumenda est porro ipsa officia dolores neque modi repellat. Explicabo id sequi enim
-            aperiam dolorum?</p>
-        </div>
-      </section>
+      </div>
     </div>
-  </footer>
 
-  <script src="../../templates/navBar/navbar.js"></script>
-</body>
+    <!-- footer----------------------------------------------------------- -->
+    <div class="container">
+      <div class="row justify-content-between pt-5">
+        <div class="col-12 col-md-2 bg-white">
+          <h6>Legal Notice</h6>
+        </div>
+        <div class="col-12 col-md-2 bg-white">
+          <h6>Privacy Policy</h6>
+        </div>
+        <div class="col-12 col-md-2 bg-white">
+          <h6>Cookies</h6>
+        </div>
+        <div class="col-12 col-md-2 bg-white">
+          <h6>Impostazioni dei cookie</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 bg-white">
+          <p class="text-center p-3">
+            LEGO, the LEGO logo, the Minifigure, DUPLO, the SPIKE logo,
+            MINDSTORMS and the MINDSTORMS logo are trademarks and/or copyrights
+            of the LEGO Group. ©2022 The LEGO Group. All rights reserved. Use of
+            this site <br />
+            signifies your agreement to the terms of use.
+          </p>
+        </div>
+      </div>
+    </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
