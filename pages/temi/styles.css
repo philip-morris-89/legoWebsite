@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 * {
   margin: 0;
   padding: 0;
@@ -394,7 +392,6 @@ html[data-display=mobile] body {
   }
 }
 
->>>>>>> master
 @font-face {
   font-family: "ceraPro-Light";
   src: url(../../assets/fonts/cera_pro_sv/woff2/CeraPro-Light.woff2);
@@ -419,22 +416,6 @@ body {
   font-family: "ceraPro-Regular", sans-serif;
 }
 
-<<<<<<< HEAD
-body {
-  font-family: "ceraPro-Regular";
-}
-
-a:link {
-  font-weight: bold;
-  color: rgb(71, 173, 235);
-  text-decoration: none !important;
-}
-
-#svg_icons {
-  width: 15px;
-  height: 15px;
-  margin-bottom: 4px;
-=======
 .navBar {
   display: flex;
   flex-direction: column;
@@ -1224,9 +1205,180 @@ a:link {
   padding-right: 1rem;
   padding-bottom: 2rem;
   padding-left: 1rem;
->>>>>>> master
+}
+.pageHeader[data-position=left] [data-container] {
+  align-items: flex-start;
+  text-align: left;
+}
+.pageHeader[data-position=center] [data-container] {
+  align-items: center;
+  text-align: center;
+}
+.pageHeader[data-position=right] [data-container] {
+  align-items: flex-end;
+  text-align: right;
+}
+.pageHeader h1 {
+  color: black;
+}
+.pageHeader[data-size=small] h1 {
+  font-family: regular;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Regular";
+  font-size: 1.25rem;
+}
+.pageHeader[data-size=large] h1 {
+  font-family: regular;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-family: "ceraPro-Regular";
+}
+@media only screen and (min-width: 426px) {
+  .pageHeader {
+    padding-top: 4rem;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    padding-left: 0;
+  }
+  .pageHeader[data-position=left] [data-container], .pageHeader[data-position=right] [data-container], .pageHeader[data-position=center] [data-container] {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pageHeader[data-position=left] [data-container] {
+    justify-content: left;
+  }
+  .pageHeader[data-position=right] [data-container] {
+    justify-content: right;
+  }
+  .pageHeader[data-position=center] [data-container] {
+    justify-content: center;
+  }
+  .pageHeader[data-size=small] h1 {
+    font-family: regular;
+    font-size: 1.5rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+  }
+  .pageHeader[data-size=large] h1 {
+    font-family: regular;
+    font-size: 2rem;
+    line-height: 1;
+    font-family: "ceraPro-Regular";
+  }
 }
 
-.col-12 {
-  background-color: rgb(251, 251, 251);
+.sectionThemes-title {
+  background-color: var(--lego-blue);
+}
+.sectionThemes-title h1 {
+  color: white;
+}
+.sectionThemes-title .pageHeader {
+  padding: 2rem 0;
+}
+
+.sectionThemes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionThemes-listItem {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1rem;
+}
+
+.themesCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.themesCard .imageCointainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.themesCard .imageCointainer .imagePrimary {
+  width: 100%;
+  height: auto;
+}
+.themesCard .imageCointainer .imageSecondary {
+  width: auto;
+  height: 100%;
+}
+.themesCard .imageCointainer .imageSecondary-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 3rem;
+  padding: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.themesCard h2 {
+  font-family: bold;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Bold";
+  padding-top: 2rem;
+  padding-bottom: 0.75rem;
+}
+.themesCard p {
+  font-family: regular;
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Regular";
+  padding-bottom: 1rem;
+  display: flex;
+  flex-grow: 1;
+}
+.themesCard .buttonsContainer {
+  display: flex;
+  flex-direction: row;
+}
+.themesCard .buttonsContainer a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  font-family: bold;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  font-family: "ceraPro-Bold";
+  color: black;
+}
+.themesCard .buttonsContainer a:hover {
+  text-decoration: underline;
+}
+.themesCard .buttonsContainer a:first-child {
+  margin-right: 2rem;
+}
+.themesCard .buttonsContainer a svg {
+  width: 0.5rem;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .sectionThemes-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sectionThemes-listItem {
+    flex-basis: 50%;
+    padding: 3rem 1rem;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .sectionThemes-listItem {
+    flex-basis: 33.33%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .sectionThemes-listItem {
+    flex-basis: 25%;
+  }
 }/*# sourceMappingURL=styles.css.map */

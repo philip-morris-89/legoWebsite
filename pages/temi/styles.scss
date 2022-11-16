@@ -1,0 +1,114 @@
+@import '../../main.scss';
+@import '../../templates/navBar/navBar.scss';
+@import '../../templates/footer/footer.scss';
+@import '../../blocks/pageHeader/pageHeader.scss';
+
+.sectionThemes-title {
+  background-color: var(--lego-blue);
+  h1 {
+    color: white;
+  }
+  .pageHeader {
+    padding: $size-32 0;
+  }
+}
+
+.sectionThemes-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionThemes-listItem {
+  display: flex;
+  flex-direction: column;
+  padding: $size-32 $size-16;
+}
+
+.themesCard {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  .imageCointainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .imagePrimary {
+      width: 100%;
+      height: auto;
+    }
+    .imageSecondary {
+      width: auto;
+      height: 100%;
+    }
+    .imageSecondary-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: $size-48;
+      padding: $size-8;
+      background-color: rgba(255, 255, 255, 0.75);
+    }
+  }
+  h2 {
+    @include body-100(bold);
+    padding-top: $size-32;
+    padding-bottom: $size-12;
+  }
+  p {
+    @include body-100(regular);
+    padding-bottom: $size-16;
+    display: flex;
+    flex-grow: 1;
+  }
+  .buttonsContainer {
+    display: flex;
+    flex-direction: row;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-decoration: none;
+      @include body-200(bold);
+      color: black;
+      &:hover {
+        text-decoration: underline;
+      }
+      &:first-child {
+        margin-right: $size-32;
+      }
+      svg {
+        width: $size-8;
+        height: auto;
+        margin-left: $size-8;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: $mobile-large) {
+  .sectionThemes-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .sectionThemes-listItem {
+    flex-basis: 50%;
+    padding: $size-48 $size-16;
+  }
+}
+
+@media only screen and (min-width: $laptop) {
+  .sectionThemes-listItem {
+    flex-basis: 33.33%;
+  }
+}
+
+@media only screen and (min-width: $laptop-medium) {
+  .sectionThemes-listItem {
+    flex-basis: 25%;
+  }
+}

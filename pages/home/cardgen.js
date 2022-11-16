@@ -562,9 +562,8 @@ function injectCard(templateCard, selector) {
   });
 }
 //listener per l'evento, load aspetta che la pagina sia tutta caricata e poi esegue la funzione injectCard
-document.addEventListener("load", injectCard("template2", "cardplacePopolari"));
-document.addEventListener("load", injectCard("template2", "cardplaceScopri"));
-document.addEventListener("load", injectCard("template1", "cardplaceConsigliati"));
+document.addEventListener("load", injectCard("template1", "cardGen1")); //ESEMPIO PER SEZIONE BEST OF
+document.addEventListener("load", injectCard("template1", "cardGen2"));
 
 //GUIDA ALL'UTILIZZO
 //Richiamare la funzione all'interno dell'html, inserire come primo parametro il template da utilizzare e come secondo parametro l'id della

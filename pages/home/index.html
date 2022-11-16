@@ -14,7 +14,17 @@
   <nav class="navBar">
     <div class="navBar-row1">
       <ul class="navBar-row1-col1">
-        <li>Link</li><!-- Area giochi -->
+        <li>
+          <a href="#" class="navBar-areaGiochi">
+            <svg width="37" height="16" viewBox="0 0 37 16" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+              class="navBar-areaGiochi-svg">
+              <path fill="currentColor"
+                d="M29.493.597l.095.084 6.535 6.54a1 1 0 01.083 1.319l-.083.094-6.535 6.54a1 1 0 01-1.498-1.32l.083-.094 4.83-4.834-31.908.001A1 1 0 01.98 6.934l.116-.007h31.907l-4.83-4.833a1 1 0 01-.082-1.32l.083-.094a1 1 0 011.32-.083z">
+              </path>
+            </svg>
+            Area Giochi
+          </a>
+        </li><!-- Area giochi -->
       </ul>
       <ul class="navBar-row1-col2">
         <li>
@@ -32,16 +42,49 @@
         </li>
       </ul>
       <ul class="navBar-row1-col3">
-        <li>Li 1</li><!-- Profile/Avatar -->
-        <li>Li 2</li><!-- VIP -->
+        <li>
+          <a href="#" class="navBar-account-vip">
+            <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="icon-head-svg">
+              <g transform="translate(1 1)" fill-rule="nonzero" fill="none">
+                <rect stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00" x="4.875" width="8.25" height="6.038"
+                  rx=".729"></rect>
+                <rect stroke="#2C2C2C" stroke-width="1.2" fill="#FFCF00" x="3.75" y="14.34" width="10.5" height="5.66"
+                  rx=".729"></rect>
+                <path
+                  d="M14.25 17.736H3.75C0 17.736 0 14.717 0 14.717v-8.68S0 3.02 3.75 3.02h10.5C18 3.019 18 6.038 18 6.038v8.679s0 3.019-3.75 3.019z"
+                  stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00"></path>
+                <path
+                  d="M7.125 8.868a.94.94 0 00-.938-.943.94.94 0 00-.937.943c0 .52.42.943.938.943a.94.94 0 00.937-.943zm4.688-.943a.94.94 0 00-.938.943c0 .52.42.943.938.943a.94.94 0 00.937-.943.94.94 0 00-.938-.943zm.293 3.86a.452.452 0 00-.649.21c-.005.008-.461.84-2.463.84-1.953 0-2.437-.793-2.462-.84a.446.446 0 00-.638-.234.618.618 0 00-.215.761c.063.147.69 1.446 3.315 1.446s3.25-1.299 3.313-1.446a.609.609 0 00-.201-.738z"
+                  fill="#2C2C2C"></path>
+              </g>
+            </svg>
+            Account
+          </a>
+        </li><!-- Profile/Avatar -->
+        <li>
+          <a href="#" class="navBar-account-vip">
+            <img src="https://www.lego.com/_next/static/images/vip-73aacc5347bc84c586d662f654c3a629.png" />
+            VIP
+          </a>
+        </li><!-- VIP -->
       </ul>
     </div>
     <div class="navBar-row2">
       <ul class="navBar-row2-col1">
-        <li>Menu</li><!-- Hamburger Menu -->
+        <!-- Hamburger Menu -->
+        <li>
+          <a href="#" class="navBar-hamburgerMenu">
+            <hr/>
+            <hr/>
+            <span>Menu</span>
+          </a>
+        </li>
+        <!-- Lego logo -->
         <li class="navBarLogo">
-          <img src="../../assets/images/logo.svg" alt="Logo">
-        </li><!-- Lego logo -->
+          <a href="../home/index.html">
+            <img src="../../assets/images/logo.svg" alt="Logo">
+          </a>
+        </li>
       </ul>
       <div class="navBar-row2-col2">
         <ul class="navBar-menu">
@@ -55,7 +98,7 @@
             <a data-tab="aiuto" href="#">Aiuto</a>
           </li>
           <li class="navBar-menuItem">
-            <a class="navBarButton" href="">Natale</a>
+            <a class="navBarButton" href="../natale/index.html">Natale</a>
           </li>
         </ul>
 
@@ -66,37 +109,49 @@
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="setPerTema" href="#">
                 <span>Set per tema</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="eta" href="#">
                 <span>Età</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="prezzi" href="#">
                 <span>Prezzi</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="merchandising" href="#">
                 <span>Merchandising LEGO</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="interessi" href="#">
                 <span>Interessi</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="pick" href="#">
                 <span>Pick and Build</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li><a href="">Set Esclusivi</a></li>
@@ -112,7 +167,7 @@
 
           <!-- Set Per tema -->
           <ul class="navBar-subMenu-right" id="setPerTema">
-            <li><a href="">Visualizza tutti i temi</a></li>
+            <li><a href="../temi/index.html">Visualizza tutti i temi</a></li>
             <li><a href="">Architecture</a></li>
             <li><a href="">Batman™</a></li>
             <li><a href="">BOOST</a></li>
@@ -126,7 +181,7 @@
             <li><a href="">Topolino e amici Disney</a></li>
             <li><a href="">Lightyear di Disney e Pixar</a></li>
           </ul>
-          
+
           <!-- Età -->
           <ul class="navBar-subMenu-right" id="eta">
             <li><a href="">Visualizza tutte le età</a></li>
@@ -196,19 +251,25 @@
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="valori" href="#">
                 <span>I nostri valori</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="app" href="#">
                 <span>Le nostre app</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li>
               <a class="navBar-subMenu-linkExpand" data-subtab="riviste" href="#">
                 <span>Le nostre riviste</span>
-                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
+                </svg>
               </a>
             </li>
             <li><a href="">Tutti i temi LEGO</a></li>
@@ -230,7 +291,7 @@
             <li><a href="">Notizie LEGO</a></li>
             <li><a href="">Sostenibilità</a></li>
           </ul>
-          
+
           <!-- Le nostre app -->
           <ul class="navBar-subMenu-right" id="app">
             <li><a href="">LEGO Builder</a></li>
@@ -260,19 +321,45 @@
 
       <div class="sideBar">
         <a class="sideBarClose">
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 fgDCVZ"><path d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z" fill="currentColor" fill-rule="evenodd"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" aria-hidden="true"
+            class="Icon__StyledSVG-sc-lm07h6-0 fgDCVZ">
+            <path
+              d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
+              fill="currentColor" fill-rule="evenodd"></path>
+          </svg>
         </a>
       </div>
       <div class="navBarOverlay closeSideBar"></div>
 
       <ul class="navBar-row2-col3">
-        <li>Li 1</li><!-- Search icon -->
-        <li>Li 2</li><!-- Avatar/Profile -->
-        <li>Li 3</li><!-- Heart icon -->
-        <li>Li 4</li><!-- Shopping icon -->
+        <!-- Search icon -->
+        <li>
+          <a href="#" class="navBar-actionLink navBar-actionLink-search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 fgDCVZ"><path d="M18 16.615c0 .375-.137.7-.412.973a1.331 1.331 0 01-.973.412 1.28 1.28 0 01-.973-.412l-3.71-3.7a7.41 7.41 0 01-4.317 1.342c-1.03 0-2.017-.2-2.958-.6a7.616 7.616 0 01-2.434-1.623 7.605 7.605 0 01-1.622-2.433A7.472 7.472 0 010 7.616c0-1.032.2-2.018.6-2.96a7.65 7.65 0 011.623-2.433A7.616 7.616 0 014.657.601 7.49 7.49 0 017.615 0c1.032 0 2.018.2 2.959.601.94.4 1.752.941 2.434 1.622a7.624 7.624 0 011.622 2.434c.4.941.601 1.927.601 2.959a7.403 7.403 0 01-1.342 4.316l3.71 3.71c.267.266.401.592.401.973m-5.539-9c0-1.334-.474-2.475-1.423-3.423C10.09 3.244 8.95 2.77 7.615 2.77c-1.333 0-2.475.474-3.423 1.422C3.243 5.14 2.77 6.28 2.77 7.616c0 1.334.474 2.475 1.423 3.423.948.949 2.09 1.422 3.423 1.422 1.335 0 2.475-.473 3.423-1.422.95-.948 1.423-2.09 1.423-3.423" fill="currentColor" fill-rule="evenodd"></path></svg>
+          </a>
+        </li>
+        <!-- Avatar/Profile -->
+        <li>
+          <a href="#" class="navBar-actionLink">
+            <svg width="20" height="22" viewBox="0 0 20 22" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-sc-lm07h6-0 kBnuCw UtilityBarstyles__AccountIcon-sc-1uwh8t8-5 KHcEY"><g transform="translate(1 1)" fill-rule="nonzero" fill="none"><rect stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00" x="4.875" width="8.25" height="6.038" rx=".729"></rect><rect stroke="#2C2C2C" stroke-width="1.2" fill="#FFCF00" x="3.75" y="14.34" width="10.5" height="5.66" rx=".729"></rect><path d="M14.25 17.736H3.75C0 17.736 0 14.717 0 14.717v-8.68S0 3.02 3.75 3.02h10.5C18 3.019 18 6.038 18 6.038v8.679s0 3.019-3.75 3.019z" stroke="#2C2C2C" stroke-width="1.5" fill="#FFCF00"></path><path d="M7.125 8.868a.94.94 0 00-.938-.943.94.94 0 00-.937.943c0 .52.42.943.938.943a.94.94 0 00.937-.943zm4.688-.943a.94.94 0 00-.938.943c0 .52.42.943.938.943a.94.94 0 00.937-.943.94.94 0 00-.938-.943zm.293 3.86a.452.452 0 00-.649.21c-.005.008-.461.84-2.463.84-1.953 0-2.437-.793-2.462-.84a.446.446 0 00-.638-.234.618.618 0 00-.215.761c.063.147.69 1.446 3.315 1.446s3.25-1.299 3.313-1.446a.609.609 0 00-.201-.738z" fill="#2C2C2C"></path></g></svg>
+          </a>
+        </li>
+        <!-- Heart icon -->
+        <li>
+          <a href="#" class="navBar-actionLink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 hhbQvj MainBarstyles__ActionIcon-sc-1cg7sjw-16 kfAPxF"><path d="M16.84 8.417L10 15.204 3.16 8.417A3.67 3.67 0 012 5.739C2 3.677 3.71 2 5.815 2a3.82 3.82 0 012.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0114.186 2C16.289 2 18 3.677 18 5.739a3.673 3.673 0 01-1.16 2.678M9.986 18l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 001.78-4.126C20 2.569 17.398 0 14.187 0A5.829 5.829 0 0010 1.762 5.827 5.827 0 005.815 0C2.604 0 0 2.569 0 5.739a5.68 5.68 0 001.782 4.126" fill="currentColor" fill-rule="evenodd"></path></svg>
+          </a>
+        </li>
+        <!-- Shopping icon -->
+        <li>
+          <a href="#" class="navBar-actionLink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" viewBox="0 0 16 20" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 jRfmwl MainBarstyles__ActionIcon-sc-1cg7sjw-16 kfAPxF"><g fill="currentColor" fill-rule="evenodd"><path d="M4 3.512v5.804c0 .377.349.684.779.684.43 0 .779-.307.779-.684V3.512C5.558 2.33 6.653 1.368 8 1.368c1.347 0 2.442.962 2.442 2.144v5.804c0 .377.35.684.78.684.43 0 .778-.307.778-.684V3.512C12 1.575 10.206 0 8 0S4 1.575 4 3.512z"></path><path d="M2.46 6.33c-.269 0-.489.194-.5.441L1.435 18.19a.436.436 0 00.131.332.52.52 0 00.348.149h12.151c.276 0 .501-.207.501-.462l-.525-11.436c-.011-.248-.23-.442-.5-.442H2.46zM14.448 20l-12.974-.001a1.591 1.591 0 01-1.064-.462 1.357 1.357 0 01-.408-1.03L.56 6.372C.595 5.602 1.277 5 2.11 5h11.78c.835 0 1.516.602 1.551 1.372l.56 12.197c0 .789-.697 1.431-1.553 1.431z"></path></g></svg>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
+  
 
   <section class="promoBanner-100">
     <!-- ************************************************************************** Banner -->
@@ -386,992 +473,8 @@
     <!-- ************************************************************************** Slider -->
     <div class="slider" data-slides="four" data-skeleton="false">
       <section data-container="large">
-        <ul class="slider-ul">
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuoti catalogo</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt3dddc992e5559ddf/21309.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Saturn V Apollo LEGO® NASA</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">119.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuori catalogo</span>
-                  </div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt3777f348d7f98b8d/21321.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Stazione spaziale internazionale</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">69.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Difficile da trovare</span>
-                  </div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt00ba54004c17e820/10283.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">NASA Space Shuttle Discovery</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">199.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Difficile da trovare</span>
-                  </div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt5e2703640ec85d2a/10266.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">NASA Apollo 11 Lunar Lander</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">99.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuori catalogo</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt15246c4306d1f236/76161.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">1989 Batwing</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">199.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Novità</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/bltdbb1945a643b8098/40521.png?fit=bounds&format=png&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Mini dimora infestata Disney</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <!-- <div class="starRatings" data-rating="star-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        id="Layer_2"
-                        data-name="Layer 2"
-                        viewBox="0 0 250 50"
-                      >
-                        <g id="Layer_1-2" data-name="Layer 1">
-                          <path
-                            class="cls-1"
-                            d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"
-                          />
-                        </g>
-                      </svg>
-                    </div> -->
-                </div>
-                <h6 class="productCard-price">39.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <!-- <span>Novità</span> -->
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt29a9be6d41806916/21058.png?fit=bounds&format=png&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">La Grande Piramide di Giza</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">139.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuori catalogo</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt934044fa508776e2/75252.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Imperial Star Destroyer™</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">699.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuoti catalogo</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt1631088ccca27a34/10279.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Camper van Volkswagen T2</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-3.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">159.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuoti catalogo</span>
-                  </div>
-                  <div class="productCard-badge"><strong>-40%</strong></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blte736bbb21f750804/10291.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Queer Eye - Loft dei Fab Five</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <!-- <div class="starRatings" data-rating="star-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        id="Layer_2"
-                        data-name="Layer 2"
-                        viewBox="0 0 250 50"
-                      >
-                        <g id="Layer_1-2" data-name="Layer 1">
-                          <path
-                            class="cls-1"
-                            d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"
-                          />
-                        </g>
-                      </svg>
-                    </div> -->
-                </div>
-                <h6 class="productCard-price">59.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Difficile da trovare</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blta93a030f7e94e881/21332.png?fit=bounds&format=png&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Il Mappamondo</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">229.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">
-                      Aggiungi alla lista dei desideri
-                    </p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale" />
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale" />
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div>
-                <!-- End of Add To Wishlist  -->
-
-                <div class="productCard-badges">
-                  <div class="productCard-badge">
-                    <span>Presto fuoti catalogo</span>
-                  </div>
-                  <!-- <div class="productCard-badge"><strong>-40%</strong></div> -->
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt42a3cdbba8bffae4/71034.png?fit=bounds&format=png&width=320&height=320&dpr=1"
-                    alt="Product image" />
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Serie 23</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <!-- <div class="starRatings" data-rating="star-5">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        id="Layer_2"
-                        data-name="Layer 2"
-                        viewBox="0 0 250 50"
-                      >
-                        <g id="Layer_1-2" data-name="Layer 1">
-                          <path
-                            class="cls-1"
-                            d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z"
-                          />
-                        </g>
-                      </svg>
-                    </div> -->
-                </div>
-                <h6 class="productCard-price">3.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">
-                    Aggiungi al Carrello
-                  </button>
-                </div>
-              </div>
-            </div>
-          </li>
+        <ul class="slider-ul" id="cardGen1">
+          <!-- Dynamic Card Generator with Javascript-->
         </ul>
       </section>
     </div>
@@ -1904,853 +1007,13 @@
     <!-- ************************************************************************** Slider -->
     <div class="slider" data-slides="four" data-skeleton="false">
       <section data-container="large">
-        <ul class="slider-ul">
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt62f99776b13a8e94/10297.png?fit=bounds&format=png&width=320&height=320&dpr=3"
-                    alt="Lego Building">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Boutique hotel</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">229.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt1cedf079c8ffbe5e/42130_Prod.png?fit=bounds&format=png&width=320&height=320&dpr=3"
-                    alt="Lego motorcycle">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">BMW M 1000 RR</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">249,99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt6e4605758d75ce41/31203.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Mappa del mondo</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">249,99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt729f7a96490ebf6f/10304.png?fit=bounds&format=png&width=320&height=320&dpr=2"
-                    alt="Product image">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">BATMOBILE™ DI BATMAN</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">99,99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt505d24ad41366851/21327.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Product image">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Macchina da scrivere</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">249.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Presto fuori catalogo</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt9ecbcfc462381676/71040.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=1"
-                    alt="Disney castle">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Il Castello Disney</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">349,99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt8a090b8576daf164/10280.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="flower's bouquet">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Bouquet di fiori</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">59.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt00ba54004c17e820/10283.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Nasa space shuttle">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">NASA Space Shuttle Discovery</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">199.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt8c4442c8dd1ff2bf/76393.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Harry Potter ed Hermione Granger">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Harry Potter ed Hermione Granger™</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                </div>
-                <h6 class="productCard-price">129.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt6e02eacd8f3ffb9c/10270.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Library">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Libreria</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">199.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Difficile da trovare</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt20c84b1ff55e3256/21323.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Piano">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Pianoforte a coda</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-4.5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">399.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
-
-          <li class="slider-li">
-            <div class="productCard" data-card="template1" data-skeleton="false">
-              <div class="productCard-display">
-                <!-- Add To Wishlist Component  -->
-                <details class="addToWishlist">
-                  <summary>
-                    <svg class="heart" width="100%" height="100%" viewBox="0 0 40 40" alt="">
-                      <rect fill="#F8F8F8" width="40" height="40" rx="20"></rect>
-                      <path class="path1"
-                        d="M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                      <path class="path2"
-                        d="M26.84 20.417L20 27.204l-6.84-6.787A3.67 3.67 0 0 1 12 17.739C12 15.677 13.71 14 15.815 14a3.82 3.82 0 0 1 2.754 1.159l1.43 1.467 1.433-1.467A3.818 3.818 0 0 1 24.186 14C26.289 14 28 15.677 28 17.739a3.673 3.673 0 0 1-1.16 2.678M19.986 30l.014-.014.014.014 8.223-8.116-.018-.019a5.678 5.678 0 0 0 1.78-4.126C30 14.569 27.398 12 24.187 12A5.829 5.829 0 0 0 20 13.762 5.827 5.827 0 0 0 15.815 12C12.604 12 10 14.569 10 17.739a5.68 5.68 0 0 0 1.782 4.126"
-                        fill="#006DB7"></path>
-                    </svg>
-                    <p class="heartButton-textContainer">Aggiungi alla lista dei desideri</p>
-                    <svg class="arrow" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path>
-                    </svg>
-                    <svg class="cross" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17"
-                      aria-hidden="true">
-                      <path
-                        d="M10.377 8.142l5.953-5.954-2.234-2.234-5.954 5.954L2.188-.046-.046 2.188l5.954 5.954-5.954 5.954 2.234 2.234 5.954-5.953 5.954 5.953 2.234-2.234z"
-                        fill="currentColor" fill-rule="evenodd"></path>
-                    </svg>
-                  </summary>
-                  <form>
-                    <ul>
-                      <li>
-                        <input type="checkbox" checked id="generale" name="generale" value="generale">
-                        <a href="">Generale (1)</a>
-                      </li>
-                      <li>
-                        <input type="checkbox" id="generale" name="generale" value="generale">
-                        <a href="">Regali natale</a>
-                      </li>
-                    </ul>
-                  </form>
-                  <a class="createNewWishlist" href="">+ Crea una lista dei desideri</a>
-                </details>
-                <div class="addToWishlistOverlay"></div><!-- End of Add To Wishlist  -->
-                <div class="productCard-badges">
-                  <div class="productCard-badge"><span>Presto fuori catalogo</span></div>
-                </div>
-                <a class="productCard-imgContainer" href="">
-                  <img
-                    src="https://www.lego.com/cdn/cs/set/assets/blt3dddc992e5559ddf/21309.jpg?fit=bounds&format=jpg&quality=80&width=320&height=320&dpr=3"
-                    alt="Saturn V Apollo LEGO NASA">
-                </a>
-              </div>
-              <div class="productCard-content">
-                <a href="" class="productCard-title">Saturn V Apollo LEGO® NASA</a>
-                <div class="productCard-ratings">
-                  <!-- Component Star Ratings -->
-                  <div class="starRatings" data-rating="star-5">
-                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_2" data-name="Layer 2" viewBox="0 0 250 50">
-                      <g id="Layer_1-2" data-name="Layer 1">
-                        <path class="cls-1"
-                          d="M200,0H0V50H250V0h-50ZM39.83,47.83l-14.83-7.8-14.83,7.8,2.83-16.52L1,19.61l16.58-2.41L25,2.17l7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Zm50,0l-14.83-7.8-14.83,7.8,2.83-16.52-12-11.7,16.58-2.41,7.42-15.03,7.42,15.03,16.58,2.41-12,11.7,2.83,16.52Z" />
-                      </g>
-                    </svg>
-                  </div>
-                </div>
-                <h6 class="productCard-price">119.99 €</h6>
-                <div class="productCard-button">
-                  <!-- Component Add to cart button -->
-                  <button class="buttonATC" data-size="large" data-theme="orange">Aggiungi al Carrello</button>
-                </div>
-              </div>
-            </div><!-- Product Card -->
-          </li>
+        <ul class="slider-ul" id="cardGen2">
+          <!-- Dynamic Card Generator using Javascript -->
         </ul>
       </section>
     </div>
   </section>
+
 
   <footer class="footer" data-skeleton="false">
     <div data-container="large">
@@ -2758,12 +1021,22 @@
         <aside class="footer-aside">
           <header class="footer-aside-header">
             <div class="footer-aside-header-item">
+      
               <img src="../../assets/images/logo.svg" alt="Image of Logo">
             </div>
-            <div class="footer-aside-header-item">Paese</div>
+            <div class="footer-aside-header-item">
+              <button class="footer-button-country">
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 17 24" aria-hidden="true" class="Icon__StyledSVG-sc-lm07h6-0 gVioTP RegionSelectorstyles__PointerIcon-sc-14dxhlg-2 izbKLk">
+                <path d="M8.303.89c2.065 0 3.92.818 5.258 2.156a7.391 7.391 0 012.156 5.257c0 4.906-5.485 11.795-7.414 14.066C6.373 20.097.89 13.21.89 8.303c0-2.065.818-3.92 2.156-5.257A7.391 7.391 0 018.303.89zm0 3.558a3.84 3.84 0 00-2.734 1.12 3.84 3.84 0 00-1.12 2.735 3.84 3.84 0 001.12 2.735 3.84 3.84 0 002.734 1.12 3.84 3.84 0 002.735-1.12 3.84 3.84 0 001.12-2.735 3.84 3.84 0 00-1.12-2.734 3.84 3.84 0 00-2.735-1.12z" stroke="currentColor" stroke-width="1.779" fill="none"></path>
+              </svg>
+              <div class="footer-aside-header-item-italia">Italia</div>
+            </button>
+            </div>
+      
           </header>
           <div class="footer-aside-link">
-            <a href="" class="footer-link">Link</a>
+            <a href="" class="footer-link"><span>Cataloghi LEGO</span></a>
+            <a href="" class="footer-link"><span>Trova un negozio LEGO</span></a>
           </div>
           <div class="footer-marketing">
             <h6 class="footer-h6">Email marketing title</h6>
@@ -2888,39 +1161,39 @@
         </ul>
       </section>
       <section class="footer-social-marketing">
+        
         <div class="footer-marketing">
-          <h6 class="footer-h6">Email marketing title</h6>
-          <div class="footer-marketing-email">Input field</div>
+          <h6 class="footer-h6"></h6>
+          <div class="footer-marketing-email"></div>
         </div>
         <div class="footer-social">
-          <h6 class="footer-h6">Social media title</h6>
+          <h6 class="footer-h6">SEGUICI</h6>
           <ul class="footer-social-links">
-            <li><a href="">Sm 1</a></li>
-            <li><a href="">Sm 2</a></li>
-            <li><a href="">Sm 3</a></li>
-            <li><a href="">Sm 4</a></li>
+            <li><a href=""><img class="footer-social-media-icon" src="https://www.lego.com/_next/static/images/facebook-895fba5a20c4facacb9655dade1d256c.svg" alt=""></a></li>
+            <li><a href=""><img class="footer-social-media-icon" src="https://www.lego.com/_next/static/images/twitter-1e56a60f172faa3c81bfdd93bc099416.svg" alt=""></a></li>
+            <li><a href=""><img class="footer-social-media-icon" src="https://www.lego.com/_next/static/images/instagram-e47f0d4b15ff76083b415be91e96f43b.svg" alt=""></a></li>
+            <li><a href=""><img class="footer-social-media-icon" src="https://www.lego.com/_next/static/images/youtube-c51b2c62583921aae813fdc55df5f9d2.svg" alt=""></a></li>
           </ul>
         </div>
       </section>
       <section class="footer-privacy-copyright">
         <div class="footer-privacy">
-          <a href="">Link 1</a>
-          <a href="">Link 2</a>
-          <a href="">Link 3</a>
-          <a href="">Link 4</a>
-          <a href="">Link 5</a>
-          <a href="">Link 6</a>
-          <a href="">Link 7</a>
+          <a href="">Informativa sulla privacy</a>
+          <a href="">Cookie</a>
+          <a href="">Informativa legale</a>
+          <a href="">Termini d'uso</a>
+          <a href="">Accessibilità</a>
+          <a href="">Impostazioni dei cookie</a>
         </div>
         <div class="footer-copyright">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, architecto cumque voluptate facilis
-            cupiditate mollitia assumenda est porro ipsa officia dolores neque modi repellat. Explicabo id sequi enim
-            aperiam dolorum?</p>
+          <p>LEGO System A/S, DK-7190 Billund, Denmark. Per effettuare acquisti online è necessario essere maggiorenni. LEGO, il logo LEGO, la Minifigure, DUPLO, LEGENDS OF CHIMA, NINJAGO, BIONICLE, MINDSTORMS e MIXELS sono marchi registrati e copyright di LEGO Group. ©2022 The LEGO Group. Tutti i diritti riservati. L'uso di questo sito implica l'accettazione dei Termini d’uso.</p>
         </div>
       </section>
     </div>
   </footer>
+  
 
+  <script src="cardgen.js"></script>
   <script src="../../templates/navBar/navbar.js"></script>
 </body>
 
