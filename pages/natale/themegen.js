@@ -72,15 +72,22 @@ let themeCall = [
 //     testo:""
 // },
 
-function injectTheme(){
-  let theme = themeCall;
-  const placeSelector = document.querySelectorAll("#themeplace");
-  theme.forEach((element) => {
-    placeSelector.insertAdjacentHTML("beforeend", 
-    `
-    PROVA PROVA PROVA
-    `)  
+function injectTheme(selector) {
+  let data = themeCall;
+  const placeSelector = document.querySelector(`#${selector}`);
+  console.log(placeSelector);
+  data.forEach((element) => {
+    placeSelector.insertAdjacentHTML(
+      "beforeend",
+      `
+        <p>ecco il ${element.nome}</p>
+      `
+    );
   });
-};
+}
 
-document.addEventListener("load", injectTheme);
+for (let i = 0; i < 3; i++) {
+  injectTheme("themePlace");
+}
+
+
