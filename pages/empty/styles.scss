@@ -1,4 +1,38 @@
-@import '../../main.scss';
-@import '../../templates/navBar/navBar.scss';
-@import '../../templates/footer/footer.scss';
-@import '../../blocks/pageHeader/pageHeader.scss';
+@import "../../css/typography";
+
+body {
+  font-family: "ceraPro-Regular";
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+}
+// nav {
+//   width: 100%;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+// }
+a:link {
+  font-weight: bold;
+  color: rgb(71, 173, 235);
+  text-decoration: none !important;
+}
+#svg_icons {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 4px;
+}
+
+.col-12 {
+  background-color: rgb(251, 251, 251);
+}
+
+// #main_card {
+//   padding: 50px;
+// }
+
+// #second_card {
+//   padding: 50px;
+// }
+// #second {
+// }
