@@ -58,7 +58,7 @@ let themeCall = [
   {
     logo: "https://www.lego.com/cdn/cs/set/assets/blt19ded43a8a1cedda/creator3in1_logo_pos_300w.png?format=png&height=35&dpr=1.5",
     sfondo:
-      "https://www.lego.com/cdn/cs/set/assets/blt19ded43a8a1cedda/creator3in1_logo_pos_300w.png?format=png&height=35&dpr=1.5",
+      "https://www.lego.com/cdn/cs/set/assets/bltbd04dd2d9f80fa8f/Creator3in1-202107-Theme-Preview.jpg?fit=bounds&format=webply&quality=80&width=420&height=200&dpr=1.5",
     nome: "Creator 3-in-1",
     testo:
       "Ci sono infinite possibilità di gioco con i set LEGO® Creator 3in1, che assicurano il triplo del divertimento! I costruttori creativi possono realizzare tre diversi progetti o creare tutto ciò che riescono a immaginare. I set includono fantastici veicoli, incredibili animali e scenari pieni di divertenti opportunità per il gioco di ruolo.",
@@ -72,14 +72,45 @@ let themeCall = [
 //     testo:""
 // },
 
-function injectTheme(){
+function injectTheme(selector) {
   let data = themeCall;
-  const themePlace = document.querySelector(`#themePlace`);
-  data.forEach((element)) => {
-    cardPlace.insertAdjacentHTML("beforeend",
-    `
-    INSERIRE QUI HTML
-    `
-  )
-  };
-};
+  const placeSelector = document.querySelector(`#${selector}`);
+  console.log(placeSelector);
+  data.forEach((element) => {
+    placeSelector.insertAdjacentHTML(
+      "beforeend",
+      `
+      <li class="sectionThemes-listItem">
+          <!-- Theme Card-->
+          <article class="themesCard">
+            <a class="imageCointainer" href="#">
+              <img class="imagePrimary" src="${element.sfondo}" />
+              <div class="imageSecondary-container">
+                <img class="imageSecondary" src="${element.logo}" />
+              </div>
+            </a>
+            <h2>${element.nome}</h2>
+            <p>${element.testo}</p>
+            <div class="buttonsContainer">
+              <a href="#">
+                Acquista i prodotti
+                <svg viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-sc-lm07h6-0 edflXJ Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+              <a href="#">
+                Scopri di più
+                <svg width="18" height="28" viewBox="0 0 18 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="Icon__StyledSVG-sc-lm07h6-0 edflXJ Chevronstyles__ChevronIcon-sc-1qql32m-0 cEWHhy"><path d="M1.825 28L18 14 1.825 0 0 1.715 14.196 14 0 26.285z" fill="currentColor"></path></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      `
+    );
+  });
+}
+
+for (let i = 0; i < 3; i++) {
+  injectTheme("themePlace");
+}
+
+
+
