@@ -1154,6 +1154,7 @@ body {
 .themesCard {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 .themesCard .imageCointainer {
   position: relative;
@@ -1193,6 +1194,8 @@ body {
   line-height: 1.4;
   font-family: "ceraPro-Regular";
   padding-bottom: 1rem;
+  display: flex;
+  flex-grow: 1;
 }
 .themesCard .buttonsContainer {
   display: flex;
@@ -1228,6 +1231,7 @@ body {
   }
   .sectionThemes-listItem {
     flex-basis: 50%;
+    padding: 3rem 1rem;
   }
 }
 @media only screen and (min-width: 1024px) {

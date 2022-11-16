@@ -27,6 +27,7 @@
 .themesCard {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 
   .imageCointainer {
     position: relative;
@@ -60,6 +61,8 @@
   p {
     @include body-100(regular);
     padding-bottom: $size-16;
+    display: flex;
+    flex-grow: 1;
   }
   .buttonsContainer {
     display: flex;
@@ -94,6 +97,7 @@
   }
   .sectionThemes-listItem {
     flex-basis: 50%;
+    padding: $size-48 $size-16;
   }
 }
 
