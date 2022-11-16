@@ -508,4 +508,4 @@ form.inputEmailSubscription input:not(:placeholder-shown) ~ h6 {
 }
 form.inputEmailSubscription input:focus ~ .inputEmailSubscription--focus {
   box-shadow: 0 0 32px var(--lego-blue);
-}/*# sourceMappingURL=inputEmailSubscription.css.map */
+}
