@@ -36,9 +36,9 @@ html[data-display=mobile] {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: $laptop-medium;
+  max-width: $laptop-large;
   margin: 0 auto;
 	@media only screen and (min-width: $mobile-large) {
-		padding: 0 $size-32;
+    padding: 0 $size-64;
 	}
 }
