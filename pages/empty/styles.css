@@ -1090,7 +1090,7 @@ body {
 
 @media only screen and (min-width: 426px) {
   .footer [data-container=large] {
-    padding: 0;
+    padding: 0 2rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -1165,6 +1165,39 @@ body {
   display: none;
 }
 
+.footer-button-country {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 85.56px;
+  height: 39px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: white;
+}
+
+.footer-aside-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer-aside-link .footer-link {
+  padding-bottom: 20px;
+}
+
+.footer-privacy a {
+  font-size: 12px;
+}
+
+.footer-copyright p {
+  font-size: 12px;
+}
+
+.footer-social-media-icon {
+  height: 40px;
+  width: 40px;
+}
+
 .pageHeader {
   display: flex;
   flex-direction: column;
@@ -1233,4 +1266,4 @@ body {
     line-height: 1;
     font-family: "ceraPro-Regular";
   }
-}
+}/*# sourceMappingURL=styles.css.map */
