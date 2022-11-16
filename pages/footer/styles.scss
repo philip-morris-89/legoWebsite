@@ -1,0 +1,41 @@
+@import '../../main.scss';
+@import '../../templates/navBar/navBar.scss';
+@import '../../templates/footer/footer.scss';
+@import '../../blocks/pageHeader/pageHeader.scss';
+@import '../../css/colors';
+@import '../../css/typography';
+
+
+
+.footer-button-country {
+    display: flex;
+    justify-content: space-around;
+    width: 85.56px;
+    height: 39px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.35);
+    color: white;  
+}
+
+
+.footer-aside-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .footer-link{
+        padding-bottom: 20px;
+    }
+   
+}
+
+
+.footer-privacy a {
+ font-size: 12px;
+}
+.footer-copyright p{
+    font-size: 12px;
+}
+.footer-social-media-icon{
+    height: 40px;
+    width: 40px;
+}
