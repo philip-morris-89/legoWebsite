@@ -24,15 +24,11 @@ body {
 
 body {
   font-family: "ceraPro-Regular", sans-serif;
+  padding-top: 0;
 }
 
 svg {
   width: 50%;
-}
-
-#navbar {
-  display: flex;
-  justify-content: space-around;
 }
 
 a:link {
@@ -47,54 +43,62 @@ a:link {
 }
 
 .img_navbar {
-  width: 20%;
+  width: auto;
+  height: 32px;
 }
 
-.navbar-brand {
-  width: 50%;
+.squareBg1 {
+  background-color: rgb(251, 251, 251);
 }
 
-.col-12 {
-  background-color: rgb(251, 251, 251) !important;
+.squareBg {
+  background-color: rgb(245, 245, 245);
 }
 
-@media only screen and (min-width: 320px) {
-  .img_navbar {
-    width: 60%;
-  }
-  #link_footer {
-    width: 85%;
-  }
+.mainSection .row .col-12 {
+  padding: 32px;
 }
-@media only screen and (min-width: 426px) {
-  .img_navbar {
-    width: 30%;
-  }
-  #link_footer {
-    width: 85%;
-  }
+
+.mainSection .row #main_card {
+  padding: 32px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@media only screen and (min-width: 768px) {
-  .img_navbar {
-    width: 35%;
+
+#link_footer {
+  justify-content: space-between;
+}
+
+#link_footer h6 {
+  font-size: 14px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  .squareBg {
+    margin: 8px 0 !important;
   }
   #link_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  #link_footer .col-2 {
     width: 100%;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .img_navbar {
-    width: 20%;
+  .mainSection .row .col-12 {
+    padding: 32px 64px;
   }
-  #link_footer {
-    width: 100%;
+  body {
+    padding-top: 48px;
   }
-}
-@media only screen and (min-width: 1440px) {
-  .img_navbar {
-    width: 30%;
+  .mainSection .row .col-12 {
+    padding: 32px 64px;
   }
-  #link_footer {
-    width: 100%;
+  .mainSection .row #main_card {
+    padding: 32px;
   }
 }/*# sourceMappingURL=styles.css.map */
